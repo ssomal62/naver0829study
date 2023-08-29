@@ -11,6 +11,7 @@
  6. git commi -m 메세지 >> 해당 메세지와 함께 위의 파일들을 로컬저정소에 커밋
  7. git push origin 브랜치명 >> 원격저장소의 해당 브랜치에 소스 보내기 (반대는 8번)
  8. git pull origin 브랜치명 >> 원격저장소의 수정된 내용을 가져올 경우.
+ 9. git checkout 브랜치명 >> 해당 브랜치에서 벗어나기
 
 >>git-bash 초기세팅 -> 처음 한번만 유저명 확인
 1. git config --global user.name "사용자명"
