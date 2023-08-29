@@ -12,5 +12,5 @@
 //4~6단계는 세트 과정
 
 >>git-bash 초기세팅 -> 처음 한번만 유저명 확인
-git config --global user.name "사용자명"
-git config --global user.email "사용자이메일"
+1. git config --global user.name "사용자명"
+2. git config --global user.email "사용자이메일"
