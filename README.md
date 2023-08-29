@@ -15,3 +15,7 @@
 >>git-bash 초기세팅 -> 처음 한번만 유저명 확인
 1. git config --global user.name "사용자명"
 2. git config --global user.email "사용자이메일"
+
+>>파일 읽기 (ex, README.md)
+1. cat README.md
+
