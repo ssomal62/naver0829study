@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>쏘말 달리는 소리!!!</title>
+</head>
+<body>
+ 
+<h2>Body안에서 스크립트 실행하기</h2>
+<img alt = "자동차1" src="../mycar/mycar12.png" border ="5" width="200">
+
+<!--스크립트로 글자와 이미지를 출력해보자-->
+<script>
+    //자바스크립트 영역 (주석마저 자바와 같음)
+    //브라우저로 html 태그 출력 : document.write
+    //브라어우저 console창 출력 : console.log 
+
+    document.write("<br><b>여기는 스크립트 영역입니다!!</b><br><br>");
+    //변수 선언
+    //var : 
+    //rat : 지역변수의 개념
+
+    var s1 = "../연예인사진/kimtaehee.jpg";
+    var s2 = "../연예인사진/soojee.jpg";
+
+    //사진 두가지 버전 중 보통 아래 버전씀
+    //자바스크립트에서는 작은따옴표(')와 큰따옴표(")가 의미가 같다.
+    //따옴표는 생략이 가능하나, 공백이 있을 경우에는 반드시 따옴표로 묶어줘야함.
+    document.write("<img alt ='사진1' src ='"+s1+"' width=200><br>");//es5 버전
+    document.write(`<img alt = 사진  src = "${s2}" width=200><br>`);//es6, ${변수값}
+
+
+</script>
+
+
+</body>
+</html>
