@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //ES6 : ECMA에서 2015년에 채택된 자바스크립트 표준.
+        /*
+            es6 에서 추가된 기능들
+            1. 블록범위 변수 : let(영역형변수), const(상수 java final 같은 개념)
+               var(함수형 변수)
+            2. 함수에서 기본 매개변수
+            3. 템플릿 리터럴(Multiline Literal) : ``
+            4. 화살표 함수 
+            5. 클래스 ,상속 추가.
+            6. 모듈개념 추가// 자바에서 import를 가져다 쓰는 것과 비슷한 기능//리액트 들어가서 공부
+        */
+
+        var a = 10;
+        document.write(`<h3>a=${a}</h3>`);
+        if(true){
+            var a = 20;
+            document.write(`<h3>a=${a}</h3>`);
+        }
+        document.write(`<h3>a=${a}</h3><hr>`);
+    
+
+        let b = 10;
+        document.write(`<h3>b=${b}</h3>`);
+        if(true){
+            let b = 20;
+            document.write(`<h3>b=${b}</h3>`);
+        }//구역이 종로되면 구역 안에 선언된 b도 소멸됨. 당연히 let을 더 많이 씀.
+        document.write(`<h3>b=${b}</h3><hr>`);
+
+
+        let s1 = "hello"; //변수 선언
+        const MSG = "HAPPY DAY"; //상수 선언
+
+        document.write(`<h3>s1 = ${s1}<br> MSG = ${MSG}</h3>`); // <h#>태그는 무조건 줄넘김 됨,
+        s1 = "안녕?";
+        //MSG = "방가방가";//오류 발생 상수는 값변경 불가
+
+        document.write(`<h3>s1 = ${s1}<br> MSG = ${MSG}</h3>`); //자바 스크립트는 오류도 안나옴.
+
+        
+
+    </script>
+
+
+
+
+
+</body>
+</html>

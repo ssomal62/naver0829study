@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        h3.title{
+            color : blue;
+            background-color: aquamarine ;
+            width : 300px;
+            padding-left: 30px;
+            /* margin-left: 30px; >> padding 대신 marjin으로 여백을 줄경우 배경도 여백이 생김*/
+            
+        }
+
+        h4{
+            color : blue;
+            margin-left: 30px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!--
+        구구단 숫자 2-9까지 입력 받아서 해당 구구단 출력
+        단, null 은 이미지 출력
+    -->
+
+    <script>
+        document.write(`<h1>구구단 출력</h1>`);
+
+        let num = Number(prompt("구구단 숫자")); // 타입 받을 때 부터 정수로 받기!
+        let name = document.write(`<h3 class = 'title'> ** ${num}단 **</h3><br>`);
+        if (1 <= num && num <= 9) {
+
+            let printMul = "";  //GroupA
+            for (let i = 1; i <= 9; i++) {
+                let mul = Number(num) * i;
+                //document.write(`<div>${num} × ${i} = ${mul}</div>`);
+                printMul += `<h4>${num} * ${i} = ${num*i}</h4>`;  //GroupA
+            }
+            document.write(printMul);// //GroupA (3문장): -> 모아놨다가 한번에 출력 가능.. 
+
+        } else {
+            document.write(`<img src = "../mycar/mycar5.png" width=500`);
+        }
+
+
+
+
+
+    </script>
+</body>
+
+</html>

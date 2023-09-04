@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div.gugu{
+            float : left; /* 태그를 우측방향으로 나열*/
+            width : 150px;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        start와 end 값을 입력받아 해당 구구단을 출력하시오
+        단 start > end 일경우 두 값 스왑하기
+    -->
+
+    <script>
+        let num1 = prompt("첫번째 숫자",4);
+        let num2 = prompt("두번째 숫자",8);
+
+        if(num1 > num2){
+            let temp = num1;
+            num1 = num2;
+            num2 = temp;
+        }
+        let s = "";
+        for(let i = 1; i <= 9; i++){
+            for(let j = num1; j <= num2; j++){
+                s += `<div class="gugu">${j} × ${i} = ${i*j}</div>`;
+            }
+            //document.write(`<div></div>`);
+            s+= "<br>";
+        }
+        document.write(s);
+
+
+    </script>
+</body>
+</html>

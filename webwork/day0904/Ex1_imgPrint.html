@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Gasoek+One&family=Gowun+Dodum&family=Noto+Sans+KR:wght@200;900&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        figure{
+            float : left;
+        }
+        /* 공백 or > : 바로 아래의 태그를 의미*/ 
+        figure img{
+            width : 250px;
+            height: 250px;
+            border: 3px inset #e7e7e7;
+            object-fit: cover;
+            margin: auto;
+        }
+
+        /*figure>figcaption>h3>b{ >> 아래처럼 쓸 수도 있지만 가능하면 모든 경로를 지정해주는 방식이 소통이 편함*/
+        figure b{
+            font-family:Black Han Sans;
+            matgin-left : 50px;
+            color : black;
+        }
+    </style>
+</head>
+
+<body>
+    <img alt="자동차1" src="../mycar/mycar5.png" width="250">
+    <img alt="자동차2" src="../mycar/mycar6.png" width="250">
+    <img alt="자동차3" src="../mycar/mycar7.png" width="250">
+    <br>
+    <b>자동차1</b>
+    <b>자동차2</b>
+    <b>자동차3</b>
+    <hr>
+    <figure >
+        <img src="../연예인사진/1.jpg" >
+        <figcaption>
+            <h3><b>연예인1</b></h3>
+        </figcaption>
+    </figure>
+    <figure>
+        <img src="../연예인사진/10.jpg">
+        <figcaption>
+            <h3><b>연예인2</b></h3>
+        </figcaption>
+    </figure>
+</body>
+
+</html>

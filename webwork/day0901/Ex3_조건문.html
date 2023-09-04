@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <style>
+        div.one{
+            font-family: 'Black Han Sans';
+            color :darkolivegreen;
+            font-size: 50px;
+        }
+
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Gasoek+One&family=Gowun+Dodum&family=Noto+Sans+KR:wght@200;900&display=swap"
+        rel="stylesheet">
+</head>
+<body >
+    <script>
+        let answer = prompt("숫자를 입력하세요");
+        document.write(`<div  class='one'>answer: <br> ${answer}</div>`)
+        
+        let imgTag = "";
+
+        let inputWidth = prompt("사진의 너비를 입력하세요.");
+        if(inputWidth == null){
+            inputWidth= 500;
+        }
+
+        //값이 1~15이면 해당 자동차 사진, 아닐 경우 연예인 사진
+        if(answer >= 1 && answer <= 15){
+            imgTag = `<img alt="자동차" src="../mycar/mycar${answer}.png" width=${inputWidth} >`;
+        }else{
+            imgTag = `<img alt="박보영" src="../연예인사진/parkboyoung.jpg" width=${inputWidth}>`;
+        }
+
+    document.write(imgTag);
+    </script>
+<div> 냐냐냔</div>
+
+</body>
+</html>

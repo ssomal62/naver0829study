@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        img.a {
+            width: 100px;
+            height: 100px;
+            border: 1px solid blue;
+            border-radius: 100px;
+        }
+
+        figure.b {
+            float: left;
+
+        }
+
+        figure.b img {
+            width: 200px;
+            box-shadow: 5px 5px 5px #e7e7e7;
+            /* x좌표, y좌표, blur */
+        }
+
+        figure.b>figcaption {
+            text-align: center;
+            /* 텍스트 가운데 정렬*/
+        }
+
+        figure.c{
+            float: left;
+        }
+
+        
+        figure.c img{
+            width: 200px;
+            height: 100%;
+            border-radius: 100px;
+        }
+
+        figure.c figcaption{
+            text-align: center;
+            font-size: 2em;
+            text-shadow: 5px 5px 5px gray;
+        }
+
+        figure.c img:hover{ /*마우스 롤오버 시 효과*/
+            box-shadow: 5px 5px 5px blue;
+        }
+
+        figure.c img:active{ /*마우스 클릭 시 효과*/
+            box-shadow: 5px 5px 5px red;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h4>마이카 사진 중 3의 배수만 출력하기</h4>
+    <script>
+        for (let i = 1; i <= 15; i++) {
+            if (i % 3 == 0) {
+                document.write(`<img class ='a' src = "../mycar/mycar${i}.png">`);
+            }
+        }
+    </script>
+
+<br>
+    <h4>mycar 전체 사진 중 5의 배수번지만 출력하기 (파일명 출력)</h4>
+    <script>
+        let str = "";
+        for (let i = 1; i <= 15; i++) {
+            if (i % 5 == 0) {
+                str +=
+                    `
+                    <figure class = 'b'>
+                    <img src = "../mycar/mycar${i}.png">
+                    <figcaption>
+                        <b>mycar${i}.png</b>
+                    </figure> 
+                    `;
+            }
+        }
+        document.write(str);
+    </script>
+<br>
+
+<h4> 연예인 사진 중 짝수 번지만 출력하기(사진아래에 해당 숫자 나오게 하기)</h4>
+
+
+    <script>
+        let img = "";
+        for (let i = 1; i <= 20; i++) {
+            if (i % 2 == 0) {
+                img += `
+                <figure class ='c'>
+                    <img src = "../연예인사진/${i}.jpg">
+                    <figcaption>
+                        <b>연예인${i}</b>
+                    </figcaption>
+                </figure>
+                `;
+            }
+ 
+        }
+        document.write(img);
+</script>
+
+
+</body>
+
+</html>

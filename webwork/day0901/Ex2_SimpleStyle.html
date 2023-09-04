@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Gasoek+One&family=Gowun+Dodum&family=Noto+Sans+KR:wght@200;900&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--문서 삽입형 스타일 적용-->
+    <style>
+        /*style 영역에서 주석처리는 이 방법이 유일 */
+        span{
+            font-family: 'Black Han Sans';
+        }
+
+        .style1{
+            font-size : 30px; /*태그 상관없이 class 명이 one인 경우 모두 적용 */
+        }
+
+        div.style1{
+            color : blue;
+        }
+
+        .style2,span.style3{ /* 좌측처럼 복수 정의 가능 */
+            background-color: blue;
+        }
+
+        /* div 태그 중 클래스명이 one, three인 경우에만 border 적용 */
+        div.style1,div.style3{
+            border: 5px solid burlywood;
+        }
+
+        h1{
+            border-width : 100px;
+            border-style : double;
+            border-color : aquamarine;
+            border-radius: 50px ; /*테두리선 둥글게, 값이 클 수록 굴곡률 높아짐*/
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+
+
+    <!--스타일 정의 : 태그 삽입형-->
+    
+    <div style="color: #000000; padding-bottom: 0x; font-size: 75px ; font-family:'Gasoek One'; background-color : #ffffff;">오늘 날씨🏕️가 <br> 좋은 이유</div>
+    <h1 style="color: rgb(78, 101, 226); background-color : black;">======</h1>
+    <!--rgba(r,g,b,alpha(투명도))-->
+
+    <span class="style1">JAVA</span>
+    <span class="style2">HTML</span>
+    <span class="style3">Java Script</span>
+
+    <hr>
+    <div class="style1">소나타</div>  <!--//div는 자동 줄넘김 됨-->
+    <div class="style2">그랜져</div>
+    <div class="style3">벤츠</div>
+
+
+
+</body>
+
+</html>
