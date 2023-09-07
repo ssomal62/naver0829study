@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #message {
+            width: 397px;
+            border : 1px solid lightslategrey;
+            background-color: #EDEDED;
+            height: 400px;
+            padding: 20px 10px;
+            /* top, left */
+            font-size: 16px;
+           
+        }
+        #myCar{
+            border: 1px solid gray;
+            width: 417px;
+            height: 300px;
+     
+            /** 절대좌표 
+            position: absolute; 
+            left : 200px;
+            top : 3px;
+            **/
+
+        }
+
+        
+    </style>
+</head>
+
+<body>
+
+    <input type="button" id="btnrnd" value="난수 발생" style="width : 420px; height: 50px;">
+    <p></p>
+    <input type="text" id="txtsu" style="width : 300px; height: 45px;" autofocus>
+
+
+
+    <button type="button" id="btnResult" style="width : 107px; height: 50px;">OK</button>
+    <p></p>
+    <img id = "myCar" src = "../mycar/mycar5.png" >
+
+    <div id="message"></div>
+
+    <script>
+
+        let rnd;
+        let m;
+        document.getElementById("btnrnd").onclick = function () {
+            m = document.getElementById("message");
+
+            rnd = parseInt((Math.random() * 100) + 1);
+            console.log(rnd);
+            alert("랜덤 숫자 생성 완료! 맞춰보세요!")
+            m.innerHTML = '';
+            
+        }
+
+        document.getElementById("btnResult").onclick = function () {
+
+            
+
+            let su = Number(document.getElementById("txtsu").value);
+
+            if (su > rnd) {
+                m.innerHTML += `• ${su}보다 작습니다.<br>`;
+            } else if (su < rnd) {
+                m.innerHTML += `• ${su}보다 큽니다.<br>`;
+            } else {
+                m.innerHTML += `• ${rnd} 정답! 추카추카!<br>` ;
+                let idx = parseInt((Math.random()*15)+1);
+                let photo = document.getElementById("myCar");
+                photo.setAttribute("src",`../mycar/mycar${idx}.png`);
+                
+            }
+
+            document.getElementById("txtsu").value = "";
+            document.getElementById("txtsu").focus();
+        }
+    </script>
+
+</body>
+
+</html>

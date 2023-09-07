@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Gasoek+One&family=Gowun+Dodum&family=Noto+Sans+KR:wght@200;900&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #message {
+            font-family: Black Han Sans;
+            background-color: coral;
+            color: white;
+            position: absolute;
+            left: 50px;
+            top: 200px;
+            width: 1000px;
+            height: 250px;
+            border-radius: 50%;
+            rotate: 0deg;
+
+
+            text-align: center;
+            line-height: 250px;
+            /*세로와 동일값주면 중앙 한줄일떄만 적용*/
+
+        }
+        #buttons{
+            position: absolute;
+            left: 470px;
+            top: 500px;
+
+        }
+        #buttons button{
+            font-family: Black Han Sans;
+            background-color: #e7e7e7;
+            width : 60px;
+            height: 60px;
+            font-size: 50px;
+            border-radius: 10%;
+            border : 0px;
+        }
+        </style>
+</head>
+<body>
+
+    <div id ="message" style="font-size: 50px;">Have a nice Day!🌈</div>
+    <div id ="buttons">
+
+        <button type="button" id = "btn_minus">-</button>
+        <button type="button" id = "btn_plus">+</button>
+
+
+
+    </div>
+
+    <script>
+
+        document.getElementById("btn_plus").onclick = function(){
+            let m = document.getElementById("message");
+            //alert(m.style.fontSize);
+
+
+            let fs = parseInt(m.style.fontSize,10); //10진수로 숫자 부분만 가져온다.
+            if(fs < 75){
+                fs += 3;
+                m.style.fontSize = fs+"px";
+            }else{
+                alert("폰트 최대 크기");
+            }
+        }
+
+        document.getElementById("btn_minus").onclick = function(){
+            let m = document.getElementById("message");
+            //alert(m.style.fontSize);
+
+
+            let fs = parseInt(m.style.fontSize,10); //10진수로 숫자 부분만 가져온다.
+            if(fs > 30){
+                fs -= 3;
+                m.style.fontSize = fs+"px";
+            }else{
+                alert("폰트 최소 크기");
+            }
+        }
+
+
+
+    </script>
+    
+</body>
+</html>

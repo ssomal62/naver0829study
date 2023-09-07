@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #time {
+            font-size: 60px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            background-color: brown;
+            color: white;
+            position: absolute;
+            left: 50px;
+            top: 200px;
+            width: 1000px;
+            height: 250px;
+            border-radius: 50%;
+            rotate: 5deg;
+
+
+            text-align: center;
+            line-height: 250px;
+            /*세로와 동일값주면 중앙 한줄일떄만 적용*/
+
+        }
+
+        #time2 {
+            font-size: 50px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            background-color: black;
+            color: white;
+            position: absolute;
+            left: 50px;
+            top: 250px;
+            width: 1000px;
+            height: 250px;
+            border-radius: 50%;
+            rotate: 5deg;
+
+            box-shadow: 10px 10px 10px white;
+
+            text-align: center;
+            line-height: 250px;
+
+            /*세로와 동일값주면 중앙 한줄일떄만 적용*/
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="time2"></div>
+    <div id="time">xxxx-xx-xx 00:00:00</div>
+    <script>
+
+        window.onload = function () {
+            init_time();
+            setInterval(function(){
+                init_time();
+            },1000);
+
+            function init_time() {
+                let date = new Date();
+                let y = date.getFullYear();
+                let m = date.getMonth() + 1;
+                let d = date.getDate();
+
+                let hh = date.getHours();
+                let mm = date.getMinutes();
+                let ss = date.getSeconds();
+
+                time.innerHTML = `${y}-${m}-${d}  ${hh}:${mm}:${ss}`;
+            }
+
+        }
+
+
+
+    </script>
+
+</body>
+
+</html>

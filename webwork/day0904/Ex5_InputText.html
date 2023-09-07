@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Gasoek+One&family=Gowun+Dodum&family=Noto+Sans+KR:wght@200;900&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+           //여기에 function 선언할 경우 window.onload 필수
+    </script>
+
+    <style>
+        div#msg { /*id 호출시에는 # 붙이기*/
+            font-family: Black Han Sans;
+            font-size: 75px;
+            margin-top: 30px;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <input type="text" id="txtmsg">
+    <input type="button" id="btn1" value="읽기">
+    <button id="btn2">읽기</button>
+
+    <div id="msg"> 메세지 출력 영역 </div>
+    <script>
+        //<body>외에 <head>에서 스크립트 구현해도 됨.
+            //반드시 id 요소값을 얻어준다
+            let text = document.getElementById("txtmsg");
+            let btn = document.getElementById("btn1");
+            let msg = document.getElementById("msg");
+
+            //버튼 이벤트(클릭 시 해당 함수가 호출됨.)
+            btn.onclick = function(){
+                //입력한 문자열 가져오기    
+                let data = text.value;
+
+                //id(msg)에 출력하고
+                msg.innerHTML +="<br><u>"+data+"</u>";  //innerHTML가 더 상위호환이라 생각하면됨.
+                
+                //입력한 값을 지운 후 포커스를 주기
+                text.value = "";
+                text.focus(); //인풋창에 커서 다시 활화 시킴.
+
+            }
+            
+
+    </script>
+ 
+</body>
+
+</html>

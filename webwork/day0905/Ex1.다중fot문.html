@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>숫자를 입력하면 행,열로 별표 출력하기</h3>
+
+    <input type="text" id="su1" size="3">
+    <div id="result" style="margin-top: 30px; font-size: 50px;">111</div>
+    <script>
+        document.getElementById("su1").onkeyup = function (e) {
+            // console.log(this.value);
+            // console.log(e.target.value);//이벤트가 발생하는 타켓
+            //console.log(e.keyCode);//아스키 코드값 출력됨.
+
+            if (e.keyCode == 13) {
+                let su = Number(e.target.value);
+                let s = '';
+                for (let i = 1; i <= su; i++) {
+                    for (let j = 1; j <= su; j++) {
+                        s += "💙";
+                    }
+                    s += "<br>";
+                }
+                document.getElementById("result").innerHTML = s;
+
+            //입력한 값 지우기
+
+            this.value = '';
+            this.focus();
+
+            }
+
+        }
+
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Gasoek+One&family=Gowun+Dodum&family=Noto+Sans+KR:wght@200;900&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            padding-left: 50px;
+        }
+
+        #message {
+            font-family: Black Han Sans;
+            font-size: 50px;
+        }
+
+        #buttons button {
+            font-family: Black Han Sans;
+            background-color: #e7e7e7;
+            width: 60px;
+            height: 60px;
+            font-size: 50px;
+            border-radius: 10%;
+            border: 0px;
+        }
+
+        #photo {
+            border-radius: 3%;
+
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <br>
+    <br>
+
+    <div id="buttons">
+
+        <button type="button" id="btn_minus">-</button>
+        <button type="button" id="btn_plus">+</button>
+        <button type="button" id="btn_rnd">?</button>
+        <button type="button" id="change_img">></button>
+
+    </div>
+
+    <br>
+
+    <div id="message"> </div>
+    <br> <br> <br> <br>
+    <img id="photo" src="../연예인사진/16.jpg" width="400px">
+
+
+    <script>
+        //alert("여기됨1");
+
+
+
+
+
+        let ms = document.getElementById("message");
+
+
+        document.getElementById("change_img").onclick = function () {
+
+            let changeImg = document.getElementById("photo");
+            let idx = parseInt((Math.random() * 20) + 1);
+            changeImg.setAttribute("src", `../연예인사진/${idx}.jpg`);
+            changeImg.setAttribute("width", "200px");
+            ms.innerHTML = `WIDTH : ${changeImg.style.width}`;
+
+        }
+        document.getElementById("btn_plus").onclick = function () {
+            let reSizeImg = document.getElementById("photo");
+            let sizeWidNum = parseInt(reSizeImg.width, 10);
+
+            if (sizeWidNum < 800) {
+                sizeWidNum += 10;
+                reSizeImg.style.width = sizeWidNum + "px";
+            } else {
+                alert("최대크기입니다.");
+            }
+            ms.innerHTML = `WIDTH : ${sizeWidNum}px`;
+        }
+
+        document.getElementById("btn_minus").onclick = function () {
+            let reSizeImg = document.getElementById("photo");
+            let sizeWidNum = parseInt(reSizeImg.width, 10);
+
+            if (sizeWidNum > 250) {
+                sizeWidNum -= 10;
+                reSizeImg.style.width = sizeWidNum + "px";
+            } else {
+                alert("최소크기입니다.");
+            }
+            ms.innerHTML = `WIDTH: ${sizeWidNum}px`;
+        }
+        document.getElementById("btn_rnd").onclick = function () {
+
+            let randomNum = parseInt((Math.random() * 250) + 250);
+            let reSizeImg = document.getElementById("photo");
+            reSizeImg.style.width = randomNum + "px";
+            ms.innerHTML = `WIDTH : ${randomNum}px`;
+        }
+
+    </script>
+
+
+
+</body>
+
+</html>

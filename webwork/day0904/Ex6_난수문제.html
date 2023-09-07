@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Gasoek+One&family=Gowun+Dodum&family=Noto+Sans+KR:wght@200;900&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script>
+    window.onload = function(){
+        let myCar = document.getElementById("myCar");
+        myCar.setAttribute("src","../mycar/mycar10.png"); 
+    }
+</script> -->
+    <style>
+        div {
+            font-family: Black Han Sans;
+            font-size: 70px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <div>랜덤 숫자 맞추기</div>
+    <br>
+
+    <input type="button" value="난수 발생" id="btnRnd">
+    <input type="text" id="txtmsg">
+    <button id="okBtn">OK</button>
+    <p></p>
+
+    <img id="myCar" src="../mycar/mycar5.png" width="500">
+
+
+
+
+    <div id="msg">메세지 출력 영역</div>
+    <script>
+
+
+        let rnd;
+        let rndImg;
+        let text = document.getElementById("txtmsg");
+        let okBtn = document.getElementById("okBtn");
+        let msg = document.getElementById("msg");
+        let myCar = document.getElementById("myCar");
+
+
+        document.getElementById("btnRnd").onclick = function () {
+
+            rnd = parseInt(Math.random() * 100) + 1;
+            data = parseInt(text.value);
+            console.log(rnd);
+
+
+            okBtn.onclick = function () {
+                let data = text.value;
+                
+                if (data == rnd) {
+                    msg.innerHTML += "<br>정답! 이미지를 갱신합니다.";
+                    rndImg = parseInt(Math.random() * 15) + 1;
+                    myCar.setAttribute("src", `../mycar/mycar${rndImg}.png`);
+                    text.value = "";
+                    text.focus();
+                    msg.innerHTML += "<br>재도전? (y/n)";
+
+
+
+                } else if (data > rnd) {
+                    msg.innerHTML += "<br>" + data + "? 더 낮은 수를 입력하세요.";
+                    text.value = "";
+                    text.focus();
+
+                } else if (data < rnd) {
+                    msg.innerHTML += "<br>" + data + "? 더 높은 수를 입력하세요.";
+                    text.value = "";
+                    text.focus();
+
+                }
+                else if (data.toString() == "y") {
+                    msg.innerHTML = "";
+                    text.value = "";
+                    msg.innerHTML += "<br>재도전합니다.";
+                    text.focus();
+
+                } else if (data.toString() == "n") {
+                    msg.innerHTML = "";
+                    text.disabled = true;
+                    msg.innerHTML += "<br>종료";
+                    return;
+                    
+                }
+
+            }
+
+        }
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

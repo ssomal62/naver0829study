@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        window.onload = function () {
+            //alert("안녕하세요");
+            //사진의 요소값 얻기
+            let test = document.getElementById("myPhoto");
+            //사진의 src 속성을 변경
+
+            test.setAttribute("src","../연예인사진/15.jpg");//바로 적용돼버림 ㅠ
+            //3초후 사진 변경
+            setTimeout(function(){
+                test.setAttribute("src","../연예인사진/3.jpg");
+            },3000);//3000 == 3초
+            //2초후 다시 원래 사진으로
+            setTimeout(function(){
+                test.setAttribute("src","../연예인사진/16.jpg");
+            },5000);
+
+            
+
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <img src="../연예인사진/16.jpg" width="500" id="myPhoto">
+
+
+
+
+</body>
+
+</html>
