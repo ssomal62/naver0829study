@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        let com, user;
+
+        window.onload = function () {
+            com = new Array(3);
+            user = new Array(3);
+
+            let txtsu = document.getElementById("txtsu");
+            let msg = document.getElementById("msg");
+
+            //새로운 난수 구하기 버튼 이벤트
+            document.getElementById("btnRandom").onclick = function () {
+
+                for (let i = 0; i < 3; i++) {
+                    com[i] = parseInt(Math.random() * 9) + 1;
+                    for (let j = 0; j < i; j++) {
+                        if (com[i] == com[j]) {
+                            i--;
+                            continue;
+                        }
+                    }
+                }
+
+                alert("새로운 난수가 발생되었습니다." + com);
+
+
+            }
+
+            //확인 버튼 이벤트
+            document.getElementById("btnOk").onclick = function () {
+                //alert("ok버튼 클릭");
+                
+                
+                let su = Number(txtsu.value);
+
+
+                //user 배열에 숫자 각각 넣기
+                // for(let i = 0; i < 3 ; i++){
+                //     user[i] = parseInt(su)/(100**i);
+                // }
+
+                user[0] = parseInt(su / 100);
+                user[1] = parseInt(su % 100 / 10);
+                user[2] = parseInt(su % 10);
+                //alert(user);
+                //유저 배열
+
+                let ball = 0;
+                let strike = 0;
+
+                for (let i = 0; i < 3; i++) {
+                    for (let j = 0; j < 3; j++) {
+                        if (com[i] == user[j]) {
+                            if (i == j) { strike++; }
+                            else { ball++; }
+                        }
+                    }
+                }
+              
+
+                msg.innerHTML += `스크라이크 : ${strike}, 볼 : ${ball}<br>`;
+                txtsu.value = "";
+                txtsu.focus();
+
+            }
+
+            txtsu.onkeyup = function (e) {
+                if (e.keyCode == 13) {
+
+                    //숫자가 아닐 경우 경고 후 함수 종료
+                    //isNan : 숫자가 아닐경우 true
+                    if (isNaN(this.value)) {
+                        alert("숫자로만 입력해주세요");
+                        this.value = "";
+                        this.focus();
+                        return;
+                    }
+                    document.getElementById("btnOk").click();
+                    //엔터입력했을때 클릭과 같은 효과
+                }
+            }
+
+        }
+
+    </script>
+</head>
+
+<body>
+
+
+    <div>
+        <button type="button" id="btnRandom">난수 발생</button>
+        <br> <br>
+
+        <input type="text" id="txtsu" style="width : 100px" autofocus>
+
+        <button type="button" id="btnOk">확인</button>
+
+
+
+        <div id="msg"></div>
+
+    </div>
+
+</body>
+
+</html>

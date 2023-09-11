@@ -33,7 +33,7 @@ public class Ex3_BingoArray {
 			}
 			System.out.println();
 
-			for (int i = 0; i < 3; i++) {
+			for (int i = 0; i < data.length; i++) {
 				if (data[i][0] == data[i][1] && data[i][1] == data[i][2]) {
 					binggo++;
 				}
@@ -65,11 +65,9 @@ public class Ex3_BingoArray {
 				break;
 
 			System.out.println("-".repeat(30));
-
 		}
 
 		System.out.println("빙고 게임 끗!🤗");
-
 	}
 
 }

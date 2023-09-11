@@ -20,7 +20,6 @@ public class Ex16_Lotto {
 					continue;
 				}
 			}
-
 		}
 
 		for (int i = 0; i < lottoNumber.length - 1; i++) {
@@ -33,12 +32,12 @@ public class Ex16_Lotto {
 				}
 			}
 		}
+		
 		System.out.print(" | ");
 		for (int i : lottoNumber) {
 
 			System.out.print(i + " | ");
 		}
-
 	}
 
 }

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <titel></titel>
+    <script>
+        window.onload = function () {
+            init_time();
+
+        };
+    </script>
+    <style>
+        div.box {
+            width: 80px;
+            height: 80px;
+            border: 0px;
+            border-radius: 100px;
+            margin-left: 10px;
+            margin-right: 10px;
+            text-align: center;
+            line-height: 80px;
+            font-size: 40px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: white;
+            text-shadow: 0px 0px 5px gray;
+        }
+
+        div#main {
+            width: 900px;
+            padding-inline-start: 5%;
+            padding-inline-end: 5%;
+            padding-block-start: 5%;
+            padding-block-end: 5%;
+            border: 1px solid #ABABAB;
+        }
+
+        div.setAline {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        div.leftFrame {
+            float: left;
+            width: 650px;
+            line-height: 100px;
+
+        }
+
+        div#leftFrame_top {
+            height: 130px;
+            border-radius: 30px;
+            background-color: #E8E8E8;
+        }
+
+        div#leftFrame_bottom {
+            height: 70px;
+            font-size: 20px;
+        }
+
+
+        div#mid_puls {
+            float: left;
+            width: 100px;
+            height: 100px;
+            font-size: 70px;
+            color: #9B9B9B;
+        }
+
+        div.rightFrame {
+            width: 130px;
+            line-height: 100px;
+        }
+
+        div#rightFrame_top {
+            height: 130px;
+            border-radius: 30px;
+            background-color: #E8E8E8;
+        }
+
+        div#rightFrame_bottom {
+            height: 70px;
+            font-size: 20px;
+        }
+
+        div#title_text {
+            font-size: 35px;
+            height: auto;
+        }
+
+        div#date_text {
+            font-size: 17px;
+            margin-top: 10px;
+            margin-bottom: 70px;
+            color: gray;
+        }
+
+
+
+        /* div.box:nth-child(1), div.box:nth-child(3), div.box:nth-child(6) {
+            color: red;
+
+            숫자 범위 정해서 색 변경하기//형난's
+        } */
+    </style>
+    <script>
+        window.onload = function () {
+
+            //날짜구하기
+            function init_time() {
+                let date = new Date();
+                let y = date.getFullYear();
+                let m = date.getMonth() + 1;
+                let d = date.getDate();
+
+                let printDate = document.getElementById("date_text");
+                printDate.innerHTML = `(${y}년 ${m<10? "0"+m:m}월 ${d<10? "0"+d:d}일 추첨)`;//삼항연산자를 이용한 날짜 출력
+            }
+
+            init_time();
+        
+   
+            ////////////////////////////
+            let box = document.querySelectorAll("div.box"); //querySelectorAll 배열로 얻어옴.
+            console.log(box.length);
+
+            let count = 1079;
+
+            document.getElementById("btn").onclick = function () {
+
+                document.getElementById("title_count").innerHTML = `${count++}회`;
+
+                //난수 구하고 중복제거 
+                let getRandomNum = new Array(7);
+                for (let i = 0; i < box.length; i++) {
+                    getRandomNum[i] = parseInt(Math.random() * 45) + 1;
+                    for (let j = 0; j < i; j++) {
+                        if (getRandomNum[i] == getRandomNum[j]) {
+                            i--;
+                            continue;
+                        }
+                    }
+                }
+
+             
+
+    
+
+                //정렬하고, 난수 범위 값에 맞춰 배경 컬러 바꾸기
+
+                let index = 0;
+
+                box.innerHTML = getRandomNum.sort((a,b) => a-b)
+                    .forEach(s => {
+                        box[index].innerHTML = s;
+                        
+                        if (1 <= s && s < 10) {
+                            box[index].style.backgroundColor = '#FEC202';
+                        } else if (10 <= s && s < 20) {
+                            box[index].style.backgroundColor = '#67C8F2';
+                        } else if (20 <= s && s < 30) {
+                            box[index].style.backgroundColor = '#FB7373';
+                        } else if (30 <= s && s < 40) {
+                            box[index].style.backgroundColor = '#ABABAB';
+                        } else if (40 <= s && s < 50) {
+                            box[index].style.backgroundColor = '#B0D841';
+                        }
+                        index++;
+                    });
+
+                }
+            }
+
+    </script>
+
+</head>
+
+<body>
+
+
+    <div id="main">
+
+        <div id="title_text" class="setAline">
+            <b id="title_count" style="color: #B53E26;">1079회 </b>&nbsp;<div style="color: #2E2E2E;">당첨결과</div>
+
+        </div>
+        <div id="date_text" class="setAline">(2024년 9월 22일 추첨)</div>
+
+        <div id="leftFrame_top" class="leftFrame setAline">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+
+
+        <div id="mid_puls" class="setAline"> <b>+</b> </div>
+
+        <div id="rightFrame_top" class="rightFrame setAline">
+            <div class="box"></div>
+
+        </div>
+        <p></p>
+
+        <div id="leftFrame_bottom" class="leftFrame setAline">당첨번호</div>
+        <div style="width : 100px; float: left">　</div>
+
+        <div id="rightFrame_bottom" class="rightFrame setAline">보너스</div>
+
+        <script>
+
+
+
+        </script>
+    </div>
+
+    <button type="button" id="btn"> 랜덤 번호 출력 </button>
+
+</body>
+
+</html>
