@@ -1,0 +1,78 @@
+body * {
+    font-family: "Noto Sans KR";
+    font-size: 20px;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: lightslategrey;
+    background-size: cover;
+}
+
+body,html{
+    height: 100%;
+    overflow: hidden;
+}
+
+
+li{
+    list-style: none;
+}
+
+#shelf-wrapper{
+    width: 780px;
+    margin: 50px auto;
+}
+
+#control-wrapper{
+    width: 300px;
+    height: 420px;
+    position: fixed; /*위치를 고정시키고 싶을 때, 총과 지폐를 좌측하단으로 고정하기 위해서, 브리우저 크기 조절해도 동일한 위치*/
+    left:0;
+    bottom: 0;
+}
+
+.shelf{
+    height: 250px;
+    margin-bottom: 50px;
+    width:800px;
+    background: url("../jquery_image/sunban.png") no-repeat center center;
+}
+
+.shelf li{
+    float: left;
+    width: 128px;
+    height: 128px;
+    cursor: pointer;
+}
+
+.money li{
+    cursor: pointer;
+}
+
+.gun {
+    width: 300px;
+    height: 250px;
+    background: url('../jquery_image/gun.png') no-repeat;
+    cursor: pointer;
+    text-indent: -9999px;
+}
+
+.gun:active{
+    background-position: bottom;
+}
+
+#msg{
+    clear: both;
+    position: absolute;
+    left: 700px;
+    top: 600px;
+    width: 400px;
+    height: 90px;
+    font-size: 22px;
+    border: 10px solid lightslategrey;
+    box-shadow: 0px 0px 10px #777788;
+    text-align: center;
+    line-height: 90px;
+    border-radius: 30px;
+}

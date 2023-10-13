@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Gasoek+One&family=Gugi&family=Nanum+Gothic+Coding:wght@400;700&family=Noto+Sans+KR:wght@200;400;800;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body * {
+	    font-family: "Noto Sans KR";
+            font-size: 20px;
+        }
+
+    </style>
+    <script>
+        $(function () {
+            $(".title>b").css({
+                "cursor" : "pointer",
+                "font-size" : "22px"
+            });
+
+            $("div.content").hide();
+
+            $(".title>b").click(function (){
+                $(this).next().slideDown('slow');
+                $(this).parent().siblings().find(".content").slideUp('slow');
+            });
+        });
+    </script>
+</head>
+
+
+<body>
+<div class = "title alert alert-danger">
+    <b>너클 끼고 '조폭 저격' 유튜버 폭행한 일당...정체 밝혀졌다</b>
+    <div class = "content">
+        공개하지 아니한 회의내용의 공표에 관하여는 법률이 정하는 바에 의한다. 대통령은 전시·사변 또는 이에 준하는 국가비상사태에 있어서 병력으로써 군사상의 필요에 응하거나 공공의 안녕질서를 유지할 필요가 있을 때에는 법률이 정하는 바에 의하여 계엄을 선포할 수 있다.
+        모든 국민은 인간으로서의 존엄과 가치를 가지며, 행복을 추구할 권리를 가진다. 국가는 개인이 가지는 불가침의 기본적 인권을 확인하고 이를 보장할 의무를 진다.
+    </div>
+</div>
+
+<div class = "title alert alert-dark">
+    <b>너클 끼고 '조폭 저격' 유튜버 폭행한 일당...정체 밝혀졌다</b>
+    <div class = "content">
+        공개하지 아니한 회의내용의 공표에 관하여는 법률이 정하는 바에 의한다. 대통령은 전시·사변 또는 이에 준하는 국가비상사태에 있어서 병력으로써 군사상의 필요에 응하거나 공공의 안녕질서를 유지할 필요가 있을 때에는 법률이 정하는 바에 의하여 계엄을 선포할 수 있다.
+        모든 국민은 인간으로서의 존엄과 가치를 가지며, 행복을 추구할 권리를 가진다. 국가는 개인이 가지는 불가침의 기본적 인권을 확인하고 이를 보장할 의무를 진다.
+    </div>
+</div>
+
+<div class = "title alert alert-light">
+    <b>너클 끼고 '조폭 저격' 유튜버 폭행한 일당...정체 밝혀졌다</b>
+    <div class = "content">
+        공개하지 아니한 회의내용의 공표에 관하여는 법률이 정하는 바에 의한다. 대통령은 전시·사변 또는 이에 준하는 국가비상사태에 있어서 병력으로써 군사상의 필요에 응하거나 공공의 안녕질서를 유지할 필요가 있을 때에는 법률이 정하는 바에 의하여 계엄을 선포할 수 있다.
+        모든 국민은 인간으로서의 존엄과 가치를 가지며, 행복을 추구할 권리를 가진다. 국가는 개인이 가지는 불가침의 기본적 인권을 확인하고 이를 보장할 의무를 진다.
+    </div>
+</div>
+
+</body>
+</html>

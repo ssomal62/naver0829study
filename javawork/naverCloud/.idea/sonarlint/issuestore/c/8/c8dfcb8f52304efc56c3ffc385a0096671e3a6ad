@@ -1,0 +1,27 @@
+
+g	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(¼“˜Üıÿÿÿÿ
+j
+java:S3008"TRename this field "MYSQL_URL" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(›Ã´¶
+m
+java:S3008"WRename this field "MYSQL_DRIVER" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(®§¬
+j
+java:S3008
+"URename this field "ORACLE_URL" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‡ûÔ
+r
+java:S3008"WRename this field "ORCLE_DRIVER" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(î°Êúÿÿÿÿ
+@	java:S106"+Replace this use of System.out by a logger.(ºù‰ 
+E	java:S106"+Replace this use of System.out by a logger.(óÊãûÿÿÿÿ
+L
+java:S6437"6Revoke and change this password, as it is compromised.(÷Öóå
+@	java:S106 "+Replace this use of System.out by a logger.(ÂØİ¾
+L
+java:S6437("6Revoke and change this password, as it is compromised.(ºŒ¬ë
+E	java:S106*"+Replace this use of System.out by a logger.(„öŠşÿÿÿÿ
+h	java:S1000"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ğ ·ªşÿÿÿÿ
+E	java:S1065"+Replace this use of System.out by a logger.(â¡ÌŞüÿÿÿÿ
+c	java:S1009"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(€´º¤
+E	java:S106?"+Replace this use of System.out by a logger.(×„Ä›ûÿÿÿÿ
+c	java:S100C"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ä˜ª±
+E	java:S106H"+Replace this use of System.out by a logger.(â¡ÌŞüÿÿÿÿ
+c	java:S100L"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(éØª
+E	java:S106R"+Replace this use of System.out by a logger.(×„Ä›ûÿÿÿÿ

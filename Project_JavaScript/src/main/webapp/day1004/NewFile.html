@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Gasoek+One&family=Gowun+Batang&family=Gowun+Dodum&family=Grandiflora+One&family=Noto+Sans+KR:wght@200;900&family=Orbit&display=swap"
+		rel="stylesheet">
+	<!-- Latest compiled and minified CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+	<style>
+		body * {
+			font-family: 'Gowun Dodum';
+			font-size: 20px;
+		}
+
+		div.message {
+			color: rgb(0, 0, 0);
+			font-family: "Black Han San" ";
+
+		}
+	</style>
+
+	<script>
+		window.onload = function () {
+
+			let m = document.querySelector("div.message");
+			document.getElementById("sfont").onchange = function () {
+
+				m.style.fontFamily = this.value;
+
+
+			}
+
+
+			document.querySelector(".btnsmall").onclick = function () {
+
+				let fs = parseInt(m.style.fontSize, 10);// 현재 글꼴 크기
+				fs -= 2;
+				m.style.fontSize = fs + "px";
+			}
+
+			document.querySelector(".btnlarge").onclick = function () {
+
+				let fs = parseInt(m.style.fontSize, 10);// 현재 글꼴 크기
+				fs += 2;
+				m.style.fontSize = fs + "px";
+			}
+
+			document.querySelector(".ckfill").onclick = function () {
+				//alert(this.value + "," + this.checked);  //현재 체크상태
+
+				if (this.checked)
+					m.style.backgroundColor = this.value;
+				else
+					m.style.backgroundColor = "white";
+			}
+
+
+			let fcolor = document.getElementsByName("fcolor"); //반환타입 배열/
+			console.log(fcolor.length);//개수 알아보기
+
+			radio = document.querySelectorAll('input[type=radio]');
+			radio.forEach(function (item) {
+				item.addEventListener('click', function () {
+					message.style.color = item.value;
+				});
+			});
+		}
+	</script>
+</head>
+
+<body>
+
+	<div style="margin:30px">
+		<div class="input-group" style="width: 400px">
+			<select id="sfont" class="form-select" style="width: 200px">
+				<option>Gasoek One</option>
+				<option>Grandiflora</option>
+				<option>Gowun Batang</option>
+				<option>Black Han Sans</option>
+				<option>Noto Sans KR</option>
+			</select>
+
+			<button type="button" class="btn btn-info btnsmall">점점 작게</button>
+			<button type="button" class="btn btn-success btnlarge">점점 작게</button>
+		</div>
+
+
+		<div style="margin:30px">
+			<label><input type="checkbox" value="orange" class="ckfill"> 채우기</label>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<label><input type="radio" name="fcolor" value="green"> 초록</label> <!--이름이 같기때문에 그룹-->
+			<label><input type="radio" name="fcolor" value="pink"> 핑크</label>
+			<label><input type="radio" name="fcolor" value="black"> 검정</label>
+			<label><input type="radio" name="fcolor" value="blue"> 파랑</label>
+		</div>
+
+
+		<div class=" message" style="margin-top: 30px; font-size:50px">
+			오늘 수요일인데에에에에에
+		</div>
+	</div>
+
+
+
+	<h2> </h2>
+
+</body>
+
+</html>

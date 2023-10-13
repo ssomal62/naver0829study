@@ -1,0 +1,30 @@
+
+v
+java:S2293$"YReplace the type specification in this constructor call with the diamond operator ("<>").(Òşÿ8²¬÷ú¬1
+E
+java:S1604>"(Make this anonymous inner class a lambda(ÎùÔò8µ¬÷ú¬1
+J
+java:S1604Q"(Make this anonymous inner class a lambda(˜§ØÚÿÿÿÿÿ8µ¬÷ú¬1
+J
+java:S1604_"(Make this anonymous inner class a lambda(Á¼úóùÿÿÿÿ8µ¬÷ú¬1
+E
+java:S1604m"(Make this anonymous inner class a lambda(ÎùÔò8µ¬÷ú¬1
+n	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(íßµÒûÿÿÿÿ8¶¬÷ú¬1
+`
+java:S1659"DDeclare "tfPhone" and all following declarations on a separate line.(•ğÌi8ä¬÷ú¬1
+e
+java:S1659"CDeclare "btnDel" and all following declarations on a separate line.(÷ô„Óùÿÿÿÿ8ä¬÷ú¬1
+A
+java:S1948"$Make "db" transient or serializable.(Ì¡Ş´8å¬÷ú¬1
+k
+java:S3252"IUse static access with "javax.swing.WindowConstants" for "EXIT_ON_CLOSE".(ì„ùûÿÿÿÿ8é¬÷ú¬1
+L	java:S106U"+Replace this use of System.out by a logger.(”Ò¦¢ûÿÿÿÿ8ò¬÷ú¬1
+8
+java:S3626f"Remove this redundant jump.(ûÁİ…8ô¬÷ú¬1
+L	java:S106d"+Replace this use of System.out by a logger.(ôØáÆıÿÿÿÿ8ô¬÷ú¬1
+Y
+java:S1854¶"6Remove this useless assignment to local variable "ex".(±ÛÒçøÿÿÿÿ8ù¬÷ú¬1
+J
+java:S1481¶"'Remove this unused "ex" local variable.(±ÛÒçøÿÿÿÿ8ú¬÷ú¬1
+Y	java:S125ï"<This block of commented-out lines of code should be removed.(ì£ ½8ü¬÷ú¬1
+X	java:S125"<This block of commented-out lines of code should be removed.(‚ÒÍ)8ı¬÷ú¬1

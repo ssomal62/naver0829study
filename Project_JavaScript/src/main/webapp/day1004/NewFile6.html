@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Gasoek+One&family=Gowun+Batang&family=Gowun+Dodum&family=Grandiflora+One&family=Noto+Sans+KR:wght@200;900&family=Orbit&display=swap"
+		rel="stylesheet">
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+	<style>
+		body * {
+			font-family: 'Gowun Dodum';
+			font-size: 20px;
+		}
+	</style>
+
+	<script>
+		window.onload = function () {
+
+			const count = document.querySelector('#count');
+			const tbody = document.querySelector('tbody');
+			const maxAttriVal = document.querySelector('#count').getAttribute('max');
+
+			count.addEventListener('change', () => {
+				const column = count.value;
+
+				let output = '';
+
+
+
+				for (let i = 1; i <= maxAttriVal; i++) {
+
+					if (i % column === 1) {
+						output += `<tr>`;
+							
+					}
+					
+					//console.log("i : " + i + ",column : " + column + ", 나머지 : "+(i%column));
+
+									output += `<td><img src="../shop/${i}.jpg" class="img-thumbnail"></td>`;
+					if (i % column === 0) {
+						output += `</tr>`;
+					}
+					
+		
+				}
+
+				tbody.innerHTML = output;
+
+			});
+		}
+	</script>
+</head>
+
+<body>
+
+	<div class="container mt-5">
+		<div>
+			<label for="count">열 수를 조절하세요 ➡️</label>
+			<input type="number" id="count" min="1" max="34" step="2" value="1">
+		</div>
+		<div>
+			<table class="table table-bordered">
+				<tbody>
+					<!-- 이미지가 출력되는 영역 -->
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+</body>
+
+</html>
