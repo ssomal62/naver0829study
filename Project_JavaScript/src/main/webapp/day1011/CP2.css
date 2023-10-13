@@ -1,0 +1,87 @@
+body{
+    font-family: 'Noto Sans KR','Noto Sans KR ExtraBold';
+    background-color: lightslategray;
+    background-position: top;
+}
+
+body,ul,h1,h2{
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    list-style: none;
+}
+
+.album{
+    overflow: hidden;
+    width : 1100px;
+    height: 600px;
+    position: absolute;
+    z-index: 0;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+
+.select-music{
+    width: 540px;
+    position: absolute;
+    left: 10%;
+    text-indent: 15px;
+    margin-top: 25.8%;
+    position: absolute;
+    z-index: 20;
+}
+
+.select-music li{
+    height: 30px;
+    background-color: rgba(0,0,0,0.7);
+    color: lightslategray;
+    border-radius: 100px;
+}
+
+.music-list{
+    display: none;
+}
+.select-music li:hover{
+    background-color: gold;
+    color: black;
+}
+
+.title{
+    width: 540px;
+    background-color: lightslategray;
+    color: gold;
+    height: 40px;
+    border-radius: 100px;
+    vertical-align: center;
+    left: 10%;
+    margin-top: 17%;
+    text-indent: 15px;
+    position: absolute;
+    z-index: 20;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.album .cover{
+    position: absolute;
+}
+
+#cdImg{
+    width: 500px;
+    height: 500px;
+    margin-left: 40%;
+    background-image: url("../jquery_image/cd-sprite.png");
+    background-position: right top;
+    position: relative;
+    z-index: -1;
+}
+
+#cdImg.music1{background-position: right top;}
+#cdImg.music2{background-position: right center;}
+#cdImg.music3{background-position: right bottom;}
+
