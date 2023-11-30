@@ -1,0 +1,11 @@
+package day1109.test6_anno;
+
+public class AnnoCar {
+	
+	AnnoTire annoTire;
+	
+	public void myCarInfo() {
+		System.out.println("내 차의 타이어는 " + annoTire.getTireName() + "입니다.");
+	}
+
+}

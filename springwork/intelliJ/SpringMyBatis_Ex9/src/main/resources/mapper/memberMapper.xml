@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mini.dao.MemberDao">
+    <select id="totalCountOfMember" resultType="int">
+            SELECT COUNT(*) FROM memberdb
+    </select>
+
+    <insert id="insertMember" parameterType="MemberDto">
+        INSERT INTO memberdb (name, myid, pass, photo, hp, email, gaipday) VALUES (#{name}, #{myid}, #{pass}, #{photo}, #{hp}, #{email}, now())
+    </insert>
+
+    <select id="selectAllMembers" resultType="MemberDto" parameterType="Map">
+        SELECT * FROM memberdb
+         <if test = "searchword!=null">
+             WHERE ${searchfield} like concat('%', #{searchword}, '%')
+         </if>
+        ORDER BY num DESC
+    </select>
+
+    <select id="searchIdCount" parameterType="String" resultType="int">
+        SELECT COUNT(*) FROM memberdb WHERE myid = #{myid}
+    </select>
+
+    <delete id="deleteMember" parameterType="int">
+        DELETE FROM memberdb WHERE num = #{num}
+    </delete>
+
+    <select id="loginCheck" parameterType="Map" resultType="int">
+        SELECT COUNT(*) FROM memberdb WHERE myid = #{myid} and pass = #{pass}
+    </select>
+
+    <select id="selectDataById" parameterType="String" resultType="MemberDto">
+        SELECT * FROM memberdb WHERE myid = #{myid}
+    </select>
+
+    <select id="selectDataByNum" parameterType="int" resultType="MemberDto">
+        SELECT * FROM memberdb WHERE num = #{num}
+    </select>
+
+    <update id = "updatePhotoByNum" parameterType="Map">
+        update memberdb SET photo = #{photo} WHERE num = #{num}
+    </update>
+
+    <update id = "updatePhotoById" parameterType="Map">
+        update memberdb SET photo = #{photo} WHERE myid = #{myid}
+    </update>
+
+
+</mapper>
+

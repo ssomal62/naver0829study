@@ -1,0 +1,27 @@
+
+m	java:S117r"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(™˜Š„8¡›œ£Á1
+l
+java:S2095­"NUse try-with-resources or close this "FileOutputStream" in a "finally" clause.(õ¬Ê†8Ë¥›¥Á1
+
+java:S1149G"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(Ôô¡Óüÿÿÿÿ8É›œ£Á1
+‚
+java:S1149¶"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(Ôô¡Óüÿÿÿÿ8Ë¥›¥Á1
+X	java:S125-"<This block of commented-out lines of code should be removed.(×·ĞÏ8Ë›œ£Á1
+]	java:S125."<This block of commented-out lines of code should be removed.(ğğÛ”şÿÿÿÿ8Ì›œ£Á1
+]	java:S125L"<This block of commented-out lines of code should be removed.(ÔÀıÙøÿÿÿÿ8Ô›œ£Á1
+L	java:S106V"+Replace this use of System.out by a logger.(¨¶ÑÍşÿÿÿÿ8Ø›œ£Á1
+H	java:S106‚"+Replace this use of System.out by a logger.(ÍÎÉ 8Û¥›¥Á1
+Y	java:S125„"<This block of commented-out lines of code should be removed.(®Ğ…ò8Û¥›¥Á1
+^	java:S125…"<This block of commented-out lines of code should be removed.(·ãÖ˜ÿÿÿÿÿ8Û¥›¥Á1
+y
+java:S1158©"VCall the static method Long.toString(...) instead of instantiating a temporary object.(Ã° øÿÿÿÿ8Û¥›¥Á1
+Y	java:S125ª"<This block of commented-out lines of code should be removed.(²‡á†8Û¥›¥Á1
+I
+java:S1075«"&Remove this hard-coded path-delimiter.(Ëû¾ƒøÿÿÿÿ8Û¥›¥Á1
+d	java:S899¬"BDo something with the "boolean" value returned by "createNewFile".(ôü¿Ÿÿÿÿÿÿ8Û¥›¥Á1
+M	java:S106»"+Replace this use of System.out by a logger.(ĞÙÀ‰ıÿÿÿÿ8ë¥›¥Á1
+M	java:S106¾"+Replace this use of System.out by a logger.(¨¶ÑÍşÿÿÿÿ8ë¥›¥Á1
+;
+java:S1128"Remove this duplicated import.(¬¬˜­8İ›œ£Á1
+;
+java:S1128"Remove this duplicated import.(ê¢ºÆ8İ›œ£Á1

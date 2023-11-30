@@ -1,0 +1,5 @@
+package study.spring.ex6;
+
+public class MemberController {
+
+}

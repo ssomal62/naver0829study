@@ -1,0 +1,13 @@
+package day1108.test1;
+
+public class TestMainEx1 {
+	public static void main(String[] args) {
+		
+		TestDto dto = new TestDto();
+		dto.setName("이소연");
+		dto.setAddr("이소연");
+		dto.setAge(34);
+		
+		System.out.println("이름 : " + dto.getName());
+	}
+}

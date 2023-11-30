@@ -1,0 +1,6 @@
+package day1108.test1;
+
+public class MeaageInter {
+	public void sayHello(String name);
+
+}

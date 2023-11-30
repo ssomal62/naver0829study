@@ -1,0 +1,12 @@
+
+g
+java:S2184"ECast one of the operands of this subtraction operation to a "double".(‹¿±Õüÿÿÿÿ8ÒÓÈ±1
+g
+java:S2184"ECast one of the operands of this subtraction operation to a "double".(ö«åıÿÿÿÿ8ÃÔÈ±1
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(´â­‘ÿÿÿÿÿ8ôŸÂÈ±1
+E	java:S108")Either remove or fill this block of code.(å¥‡8„ÄÆÈ±1
+X	java:S125!"<This block of commented-out lines of code should be removed.(€ƒÕ¥8 ÂÈ±1
+X	java:S125-"<This block of commented-out lines of code should be removed.(€ƒÕ¥8’ ÂÈ±1
+L	java:S1063"+Replace this use of System.out by a logger.(Å­Ëİúÿÿÿÿ8“ ÂÈ±1
+Y
+java:S1128"7Remove this unused import 'java.util.stream.IntStream'.(ÙÉ½Ÿùÿÿÿÿ8“ ÂÈ±1

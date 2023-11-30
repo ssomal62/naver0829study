@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/js" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="63222858b6" level="application" />
+  </component>
+  <component name="SonarLintModuleSettings">
+    <option name="uniqueId" value="7bc7478a-2815-4889-a484-47df157466ae" />
+  </component>
+</module>

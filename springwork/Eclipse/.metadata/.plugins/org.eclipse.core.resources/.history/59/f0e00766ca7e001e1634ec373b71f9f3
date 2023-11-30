@@ -1,0 +1,5 @@
+package study.day1109.mvc2;
+
+public class ShopDto {
+
+}

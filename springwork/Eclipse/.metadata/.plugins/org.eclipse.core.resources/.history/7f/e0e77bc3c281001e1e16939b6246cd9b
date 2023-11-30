@@ -1,0 +1,15 @@
+package study.day1113.mvc1;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+
+@Controller
+public class DataReadController {
+	
+
+	@GetMapping("/process1")
+	public String process1() {
+		return "result1";
+	}
+	
+}

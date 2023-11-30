@@ -1,0 +1,12 @@
+
+jWeb:DoctypePresenceCheck":Insert a <!DOCTYPE> declaration to before this <html> tag.(œ÷Ãûÿÿÿÿ8â˜Êç¼1
+a	Web:S5254"@Add "lang" and/or "xml:lang" attributes to this "<html>" element(œ÷Ãûÿÿÿÿ8ä˜Êç¼1
+NWeb:ImgWithoutAltCheck6"%Add an "alt" attribute to this image.(µ „Ô8ñŒÑ…½1
+E	Web:S1827<")Remove this deprecated "align" attribute.(òåûÒ8òŒÑ…½1
+E	Web:S1827>")Remove this deprecated "width" attribute.(½ÌÕö8ôŒÑ…½1
+E	Web:S1827E")Remove this deprecated "width" attribute.(Šÿ°8õŒÑ…½1
+E	Web:S1827Q")Remove this deprecated "width" attribute.(Œ§ú‚8÷ŒÑ…½1
+J	Web:S1827X")Remove this deprecated "align" attribute.(»¡å¬ıÿÿÿÿ8øŒÑ…½1
+n Web:TableHeaderHasIdOrScopeCheck>";Add either an 'id' or a 'scope' attribute to this <th> tag.(½ÌÕö8úŒÑ…½1
+n Web:TableHeaderHasIdOrScopeCheckE";Add either an 'id' or a 'scope' attribute to this <th> tag.(Šÿ°8ûŒÑ…½1
+n Web:TableHeaderHasIdOrScopeCheckQ";Add either an 'id' or a 'scope' attribute to this <th> tag.(Œ§ú‚8üŒÑ…½1

@@ -1,0 +1,23 @@
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+    <!--template : 레이아웃을 어디서 만들 것인지 경로 설정-->
+    <definition name = "layout1" template="/WEB-INF/layout/layout1.jsp">
+        <put-attribute name="header" value = "/WEB-INF/layout/header.jsp"/>
+        <put-attribute name="menu" value = "/WEB-INF/layout/menu.jsp"/>
+        <put-attribute name="info" value = "/WEB-INF/layout/info.jsp"/>
+        <put-attribute name="footer" value = "/WEB-INF/layout/footer.jsp"/>
+        <put-attribute name="home" value = "/WEB-INF/layout/home.jsp"/>
+        <put-attribute name="login" value = "/WEB-INF/login/loginmain.jsp"/>
+    </definition>
+
+
+    <!-- layout macro -->
+    <definition name = "*/*" extends="layout1">
+        <put-attribute name="home" value="/WEB-INF/{1}/{2}.jsp"/>
+    </definition>
+
+</tiles-definitions>
+

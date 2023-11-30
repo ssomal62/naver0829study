@@ -1,0 +1,6 @@
+
+m	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ºÎ×Ô8ôž¨ö°1
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(´â­‘ÿÿÿÿÿ8ôž¨ö°1
+V
+java:S1612"9Replace this lambda with method reference 'list::remove'.(šç®¶8€Ÿ¨ö°1
+L	java:S106I"+Replace this use of System.out by a logger.(´‹¹öþÿÿÿÿ8ˆŸ¨ö°1

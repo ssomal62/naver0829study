@@ -1,0 +1,6 @@
+
+cWeb:DoctypePresenceCheck":Insert a <!DOCTYPE> declaration to before this <html> tag.(œ÷Ãûÿÿÿÿ
+Z	Web:S5254"@Add "lang" and/or "xml:lang" attributes to this "<html>" element(œ÷Ãûÿÿÿÿ
+NWeb:ImgWithoutAltCheck^"%Add an "alt" attribute to this image.(É¥à›8®Â£«¿1
+OWeb:TableWithoutCaptionCheckz" Add a description to this table.(ÅáÓ¿8¦„Ê­¿1
+A	Web:S5256z"%Add "<th>" headers to this "<table>".(ÅáÓ¿8¦„Ê­¿1

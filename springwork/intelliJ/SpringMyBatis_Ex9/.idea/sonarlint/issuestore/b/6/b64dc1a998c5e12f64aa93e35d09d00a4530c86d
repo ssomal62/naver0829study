@@ -1,0 +1,26 @@
+
+h	java:S112­"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8şÛÓùÀ1
+h	java:S112¯"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8ÿÛÓùÀ1
+h	java:S112Ú"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8ÿÛÓùÀ1
+h	java:S112Ü"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8€ÜÓùÀ1
+i
+java:S1192a"LDefine a constant instead of duplicating this literal "currentPage" 4 times.(ÙµÈµ8ÜÓùÀ1
+n	java:S117ğ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¯ÈøÄ8ÜÓùÀ1
+u
+java:S2259"RA "NullPointerException" could be thrown; "getOriginalFilename()" can return null.(ç…Ô†ûÿÿÿÿ8 ÜÓùÀ1
+u
+java:S2259Ê"RA "NullPointerException" could be thrown; "getOriginalFilename()" can return null.(ç…Ô†ûÿÿÿÿ8 ÜÓùÀ1
+L	java:S106P"+Replace this use of System.out by a logger.(Åû•åúÿÿÿÿ8ç™ÓùÀ1
+M	java:S106˜"+Replace this use of System.out by a logger.(ÏŠ˜«ùÿÿÿÿ8«ÜÓùÀ1
+c
+java:S2147®"ECombine this catch with the one at line 172, which has the same body.(ï­£Ä8­ÜÓùÀ1
+I
+java:S1075¤"&Remove this hard-coded path-delimiter.(‚¼šãùÿÿÿÿ8¯ÜÓùÀ1
+c
+java:S2147Û"ECombine this catch with the one at line 217, which has the same body.(ï­£Ä8´ÜÓùÀ1
+I
+java:S1075Ñ"&Remove this hard-coded path-delimiter.(‚¼šãùÿÿÿÿ8´ÜÓùÀ1
+Q
+java:S1128"4Remove this unused import 'mini.dao.BoardAnswerDao'.(ˆ²’Ü8Ù÷ÌûÀ1
+Q
+java:S1128"4Remove this unused import 'mini.dto.BoardAnswerDto'.(ÀíıÚ8Ù÷ÌûÀ1

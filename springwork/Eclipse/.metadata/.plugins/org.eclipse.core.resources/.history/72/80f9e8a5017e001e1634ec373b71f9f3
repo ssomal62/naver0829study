@@ -1,0 +1,9 @@
+package day1108.test1;
+
+public class TestMainEx2 {
+	public static void main(String[] args) {
+		System.out.println("1. 기본 자바 방식으로 MessageInter 생성");
+		MessageImpl m1 = new Message1();
+		
+	}
+}

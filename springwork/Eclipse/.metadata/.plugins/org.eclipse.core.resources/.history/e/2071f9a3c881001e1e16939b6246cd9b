@@ -1,0 +1,40 @@
+package study.day1113.mvc1;
+
+import javax.servlet.http.HttpServletRequest;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.client.HttpServerErrorException;
+
+@Controller
+public class DataReadController {
+	
+
+	@GetMapping("/process1")
+		public String process1(Model model, 
+				@RequestParam("name") String irum,
+				@RequestParam String addr, 
+				@RequestParam int age) {
+		model.addAttribute("name",irum);
+		model.addAttribute("addr",addr);
+		model.addAttribute("age",age + "세는 " + (age>=20?"성인":"미성년자")+"입니다");
+		return "result1";
+	}
+	
+//	@GetMapping("/process1")
+//	public String process1(HttpServletRequest request, Model model) {
+//		
+//		String name = request.getParameter("name");
+//		String addr = request.getParameter("addr");
+//		int age = Integer.parseInt(request.getParameter("age"));
+//		
+//		model.addAttribute("name",name);
+//		model.addAttribute("addr",addr);
+//		model.addAttribute("age",age+"세는 " + (age>20? "성인":"미성년자") + "입니다.");
+//		return "result1";
+//	}
+	
+}

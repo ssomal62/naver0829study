@@ -1,0 +1,10 @@
+
+t	java:S120
+"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(´â­‘ÿÿÿÿÿ
+Y
+java:S3358"DExtract this nested ternary operation into an independent statement.(è¶‘L
+Y
+java:S3358"DExtract this nested ternary operation into an independent statement.(è¶‘L
+M
+java:S1135"2Complete the task associated to this TODO comment.(» æÿÿÿÿÿ
+E	java:S106"+Replace this use of System.out by a logger.(ÙŠ¨øÿÿÿÿ

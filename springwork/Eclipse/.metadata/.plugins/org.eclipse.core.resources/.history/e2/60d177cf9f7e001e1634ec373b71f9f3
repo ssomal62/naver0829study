@@ -1,0 +1,10 @@
+package day1109.test6_anno;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class TextMainAnnoEx6 {
+	
+	ApplicationContext context = ClassPathXmlApplicationContext("appcontext2.xml");
+
+}

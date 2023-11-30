@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Gasoek+One&family=Gugi&family=Nanum+Gothic+Coding:wght@400;700&family=Noto+Sans+KR:wght@200;400;800;900&display=swap"
+          rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body * {
+            font-family: "Noto Sans KR";
+            font-size: 20px;
+        }
+    </style>
+
+    <script>
+        $(function () {
+            $("#btn1").click(function () {
+                $.ajax({
+                    type      : "get",
+                    dataType  : "json",
+                    url       : "data1.json",
+                    success   : function (res) {
+                        let s = "";
+                        s += "name : " + res.name + "<br>";
+                        s += "addr : " + res.addr + "<br>";
+                        $(".result").html(s);
+                    },
+                    statusCode: {
+                        404: function () {
+                            alert("json 파일을 찾을 수 없어요");
+                        },
+                        500: function () {
+                            alert("서버오류. 코드를 다시 한 번 보세요.");
+                        }
+                    }
+                });
+            });
+
+            $("#btn2").click(function () {
+                $.ajax({
+                    type      : "get",
+                    dataType  : "xml",
+                    url       : "data2.xml",
+                    success   : function (res) {
+                        let s = "";
+                        s += "이름 : " + $(res).find("name").text() + "<br>";
+                        s += "지역 : " + $(res).find("name").attr("city") + "<br>";
+                        s += "나이 : " + $(res).find("age").text();
+                        $(".result").html(s);
+                    },
+                    statusCode: {
+                        404: function () {
+                            alert("xml 파일을 찾을 수 없어요");
+                        },
+                        500: function () {
+                            alert("서버오류. 코드를 다시 한 번 보세요.");
+                        }
+                    }
+                });
+
+                $("#btn3").click(function () {
+                    $.ajax({
+                        type      : "get",
+                        dataType  : "json",
+                        url       : "datajsondarray.json",
+                        success   : function (res) {
+                            let s = "";
+                            s += "총 갯수 : " + $(res).length + "개 <br><hr>";
+                            //배열은 each 문으로 반복
+                            $.each(res, function (idx, item) {
+                                s +=
+                                    `
+                               이름 : ${item.name}<br>
+                               취미 : ${item.hobby}<br>
+                               핸드폰 : ${item.hp}<br><hr>
+                               `;
+
+                            });
+                            $(".result").html(s);
+                        },
+                        statusCode: {
+                            404: function () {
+                                alert("json 파일을 찾을 수 없어요");
+                            },
+                            500: function () {
+                                alert("서버오류. 코드를 다시 한 번 보세요.");
+                            }
+                        }
+
+                    });
+                });
+            });
+
+            $("#btn4").click(function () {
+                $.ajax({
+                    type      : "get",
+                    dataType  : "xml",
+                    url       : "dataxmlArray.xml",
+                    success   : function (res) {
+                        let s ="";
+                        s += "총인원 : " + $(res).find("stu").length + "명<hr>";
+                        $(res).find("stu").each(function (idx,item){
+
+                            let java = $(item).find("java").text();
+                            let spring = $(item).find("spring").text();
+                            let html = $(item).find("html").text();
+                            let total = Number(java) + Number(spring)+ Number(html);
+                            let avg = total/3;
+
+                            let name = $(item).attr("name");
+                            let ban = $(item).find("ban").text();
+
+                            s+=
+                                `
+                                반 : ${ban}<br>
+                                이름 : ${name}<br>
+                                Java 점수 : ${java}<br>
+                                spring 점수 : ${spring}<br>
+                                html 점수 : ${html}<br>
+                                총점 : ${total}<br>
+                                평균 : ${avg}<hr>
+                                `;
+                        });
+
+                        $(".result").html(s);
+                    },
+                    statusCode: {
+                        404: function () {
+                            alert("xml 파일을 찾을 수 없어요");
+                        },
+                        500: function () {
+                            alert("서버오류. 코드를 다시 한 번 보세요.");
+                        }
+                    }
+
+                });
+            });
+        });
+
+    </script>
+</head>
+
+<body>
+<div>
+    <button class="btn btn-info" id="btn1" type="button">json 읽기 #1</button>
+    <button class="btn btn-info" id="btn2" type="button">xml 읽기 #2</button>
+    <button class="btn btn-info" id="btn3" type="button">json 배열 읽기 #3</button>
+    <button class="btn btn-info" id="btn4" type="button">xml 배열 읽기 #4</button>
+</div>
+
+<div class="result" style="font-size: 20px; margin: 30px 20px;">
+    111
+</div>
+
+</body>
+</html>

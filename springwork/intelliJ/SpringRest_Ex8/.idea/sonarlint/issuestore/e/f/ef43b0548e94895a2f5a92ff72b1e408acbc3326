@@ -1,0 +1,7 @@
+
+G	java:S106 "+Replace this use of System.out by a logger.(èÔ¤µ8¶Å…×½1
+G	java:S106#"+Replace this use of System.out by a logger.(ÍÎÉ 8¹Å…×½1
+a
+java:S2147."DCombine this catch with the one at line 44, which has the same body.(ï­£Ä8½Å…×½1
+H
+java:S1075+"&Remove this hard-coded path-delimiter.(Ó²”Ãþÿÿÿÿ8ÀÅ…×½1

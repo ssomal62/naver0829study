@@ -1,0 +1,15 @@
+package study.spring.ex6;
+
+import org.springframework.stereotype.Controller;
+
+@Controller
+public class MemberController {
+	
+	
+	@GetMapping("/")
+	public String home() {
+		return "member/start";
+	}
+	
+
+}

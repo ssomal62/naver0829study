@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap");
+body {
+  background-color: #118e6b;
+  margin-top: 5em;
+}
+
+main {
+  width: 30em;
+  height: 40em;
+  background-color: #edede9;
+  margin: auto;
+  padding: 2em;
+  font-family: -apple-system, "Noto Sans KR";
+  font-weight: 400;
+  color: #489779;
+  border-top-left-radius: 0.5em;
+  border-top-right-radius: 0.5em;
+}
+main header {
+  font-family: -apple-system, "Noto Sans KR";
+  font-size: 3.5em;
+  font-weight: 900;
+  text-align: center;
+  letter-spacing: 0.2em;
+  margin-bottom: 0.5em;
+}
+main nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3em;
+}
+main nav #prevMonth {
+  margin-right: 2em;
+  font-size: 2em;
+}
+main nav #prevMonth:hover {
+  color: #3263bc;
+  cursor: pointer;
+}
+main nav #nextMonth {
+  margin-left: 2em;
+  font-size: 2em;
+}
+main nav #nextMonth:hover {
+  color: #3263bc;
+  cursor: pointer;
+}
+main nav input[type=number]::-webkit-outer-spin-button,
+main nav input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+main nav .dateBox {
+  width: 4em;
+  height: 2em;
+  font-family: -apple-system, "Noto Sans KR";
+  font-size: 1em;
+  font-weight: 400;
+  background-color: #d9dbda;
+  border: 0;
+  border-radius: 0.2em;
+  margin-right: 0.5em;
+  text-align: center;
+  color: #489779;
+}
+main nav .dateBox:focus {
+  outline: 0;
+  background-color: #489779;
+  color: #edede9;
+}
+main nav figure {
+  float: left;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+main nav figcaption {
+  font-size: 0.5em;
+  letter-spacing: 0;
+  position: absolute;
+  color: #f06e50;
+}
+main table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  cursor: default;
+  margin: auto;
+}
+main table th {
+  width: 3em;
+  height: 3em;
+  border-top: 0.1em solid #118e6b;
+  border-bottom: 0.1em solid #118e6b;
+  text-align: center;
+}
+main table th:nth-child(1), main table th:nth-child(7) {
+  color: #f06e50;
+}
+main table td {
+  width: 3.4em;
+  height: 3em;
+  border-bottom: 0.1em solid #118e6b;
+  text-align: center;
+  position: relative;
+}
+main table td .holidayCaption {
+  position: absolute;
+  color: #f06e50;
+  font-size: 0.3em;
+  left: 50%;
+  top: 65%;
+  transform: translateX(-50%);
+}
+main table td .todayCaption {
+  position: absolute;
+  color: #3263bc;
+  font-size: 0.3em;
+  left: 50%;
+  top: 65%;
+  transform: translateX(-50%);
+}
+main table .row0, main table .row1 {
+  color: #f06e50;
+  font-weight: 600;
+  border-bottom: 0.4em solid #f06e50;
+}
+main table .containDate {
+  border-bottom: 0.4em solid #3263bc;
+}
+main table .containDate:hover {
+  background-color: #d9dbda;
+}
+main table .todayHoliday {
+  color: #f06e50;
+  font-weight: 600;
+  background-color: #7beaa7;
+  border-bottom: 0.4em solid #f06e50;
+}
+main table .holiday {
+  color: #f06e50;
+  font-weight: 600;
+  border-bottom: 0.4em solid #f06e50;
+}
+main table .today {
+  background-color: #7beaa7;
+}
+main section {
+  margin-bottom: 4em;
+}
+
+footer {
+  width: 30em;
+  background-color: #edede9;
+  margin: auto;
+  padding: 2em;
+  font-family: -apple-system, "Noto Sans KR";
+  font-weight: 400;
+  border-bottom-left-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+  text-align: center;
+  color: #cccccc;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+
+	<bean id="mes1" class = "day1108.test1.Message1"></bean> <!-- 기본값은 singleton -->
+	<bean id="mes2" class = "day1108.test1.Message2" scope = "prototype"></bean>
+	
+	<bean id="myshop" class = "day1108.test3.MyShop">
+		
+		<!-- 생성자를 통한 주입 1-->
+		<!--<constructor-arg value="레이스 블라우스"/>-->
+		
+		
+		<!-- 생성자를 통한 주입 2-->
+		<constructor-arg>
+			<value>레이스 블라우스</value>
+		</constructor-arg>
+		<property name ="color" value = "orange"/>
+		<property name ="price" value = "45000"/>
+		
+	</bean>
+	
+	<bean id ="person" class = "day1108.test3.Person">
+		<constructor-arg value = "캔디"/>
+		<property name="addr">
+			<value>서울시 강남구 역삼동 비트캠프 빌딩</value>
+		</property>
+		
+		<!-- 레퍼런스 주입 -->
+		<property name="myShop" ref="myshop"/>
+	</bean>
+	
+	
+	<bean id ="stu" class ="day1108.test4.Student">
+		<property name="name" value = "강호동"></property>
+		<property name="age" value = "34"></property>
+		<property name="blood" value = "AB"></property>
+	</bean>
+	
+	<bean id="sawon" class = "day1108.test4.Sawon">
+		<constructor-arg value="이영자"/>
+		<constructor-arg value="서울"/>
+		<constructor-arg>
+			<list>
+				<value>낚시</value>
+				<value>게임</value>
+				<value>여행</value>
+			</list>
+		</constructor-arg>
+	</bean>
+	
+	
+</beans>

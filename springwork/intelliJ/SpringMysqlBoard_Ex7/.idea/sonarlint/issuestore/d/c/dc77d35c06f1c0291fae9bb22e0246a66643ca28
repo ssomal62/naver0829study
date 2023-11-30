@@ -1,0 +1,11 @@
+
+t
+java:S1192b"XDefine a constant instead of duplicating this literal "redirect:./content?num=" 3 times.(ÒÏÚ48ü“õ¬½1
+t
+java:S2259N"RA "NullPointerException" could be thrown; "getOriginalFilename()" can return null.(ÑÀê§üÿÿÿÿ8Š”õ¬½1
+a
+java:S2147["DCombine this catch with the one at line 89, which has the same body.(ï­£Ä8‘”õ¬½1
+H
+java:S1075X"&Remove this hard-coded path-delimiter.(Ó²”Ãþÿÿÿÿ8“”õ¬½1
+u
+java:S1128"SRemove this unused import 'org.springframework.beans.factory.annotation.Autowired'.(¡ž¸Îùÿÿÿÿ8÷˜Ê­½1

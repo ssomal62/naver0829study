@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mini.dao.GuestDao">
+    
+    <select id="selectAllGuest" resultType="GuestDto">
+        SELECT * FROM guestdb ORDER BY guest_num ASC
+    </select>
+    <insert id="insertGuest" parameterType="GuestDto">
+        INSERT into guestdb values (null,#{guest_nickname},#{guest_photo},#{guest_content},now())
+    </insert>
+    <delete id="deleteGuest" parameterType="int">
+        DELETE from guestdb WHERE guest_num = #{guest_num}
+    </delete>
+
+
+</mapper>
+

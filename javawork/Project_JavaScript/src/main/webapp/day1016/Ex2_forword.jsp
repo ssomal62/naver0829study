@@ -1,0 +1,40 @@
+<%@ page import="data.shopDTO" %>
+<%@ page import="java.util.List" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Gasoek+One&family=Gugi&family=Nanum+Gothic+Coding:wght@400;700&family=Noto+Sans+KR:wght@200;400;800;900&display=swap"
+          rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Title</title>
+    <style>
+        body * {
+            font-family: "Noto Sans KR";
+        }
+    </style>
+</head>
+<body>
+<h3 class='alert alert-danger'>ex2-forword 파일입니다</h3>
+
+
+<%
+    String msg = (String) request.getAttribute("msg");
+    List<shopDTO> list = (List<shopDTO>) request.getAttribute("list");
+%>
+
+<h2>Ex1에서 저장해 둔 msb : <%=msg%>
+</h2>
+<h2>Ex1에서 저장해 둔 shopDTO LIST</h2>
+
+<%
+    for (shopDTO p : list) {
+%>
+<h4>상품명 : <%=p.getProduct()%>
+</h4>
+<h4>가격 : <%=p.getPrice()%>
+</h4>
+<%
+    }
+%>
+</body>
+</html>

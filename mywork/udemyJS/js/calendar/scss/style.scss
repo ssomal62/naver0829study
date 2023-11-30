@@ -1,0 +1,221 @@
+$bg-color: #118e6b !default;
+
+$font-color: #489779 !default;
+$font-color1: #f06e50 !default;
+
+$sans-serif: -apple-system, "Noto Sans KR" !default;
+$display: -apple-system, "Black Han Sans" !default;
+
+$main-color: #edede9 !default;
+$highlight-color: #7beaa7 !default;
+$highlight-color2: #d9dbda !default;
+$err-color: #f06e50 !default;
+
+$line_color1: #3263bc !default;
+$line_color2: #118e6b !default;
+$line_color3: #118e6b !default;
+
+$main-radius: 0.5em !default;
+$type-size2: 1.5em;
+$type-size3: 4.5em;
+
+body {
+  background-color: $bg-color;
+  margin-top: 5em;
+}
+
+main {
+  width: 30em;
+  height: 40em;
+  background-color: $main-color;
+  margin: auto;
+  padding: 2em;
+  font-family: $sans-serif;
+  font-weight: 400;
+  color: $font-color;
+  border-top-left-radius: $main-radius;
+  border-top-right-radius: $main-radius;
+
+
+  header {
+    font-family: $sans-serif;
+    font-size: 3.5em;
+    font-weight: 900;
+    text-align: center;
+    letter-spacing: 0.2em;
+    margin-bottom: 0.5em;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3em;
+
+
+    #prevMonth {
+      margin-right: 2em;
+      font-size: 2em;
+      &:hover{
+        color : $line_color1;
+        cursor: pointer;
+      }
+    }
+
+    #nextMonth {
+      margin-left: 2em;
+      font-size: 2em;
+      &:hover{
+        color : $line_color1;
+        cursor: pointer;
+      }
+    }
+
+    input[type="number"]::-webkit-outer-spin-button,
+    input[type="number"]::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+     margin: 0;
+    }
+
+    .dateBox {
+      width: 4em;
+      height: 2em;
+      font-family: $sans-serif;
+      font-size: 1em;
+      font-weight: 400;
+      background-color: $highlight-color2;
+      border: 0;
+      border-radius: 0.2em;
+      margin-right: 0.5em;
+      text-align: center;
+      color: $font-color;
+
+
+      &:focus {
+        outline: 0;
+        background-color: $font-color;
+        color: $main-color;
+      }
+
+    }
+
+
+    figure {
+      float: left;
+      margin-left: 1em;
+      margin-right: 1em;
+    }
+
+    figcaption {
+      font-size: 0.5em;
+      letter-spacing: 0;
+      position: absolute;
+      color: $err-color;
+    }
+
+  }
+
+  table {
+    border-spacing: 0;
+    border-collapse: collapse;
+    cursor: default;
+    margin: auto;
+
+    th {
+      width: 3em;
+      height: 3em;
+      border-top: 0.1em solid $line_color2;
+      border-bottom: 0.1em solid $line_color2;
+      text-align: center;
+
+      &:nth-child(1), &:nth-child(7) {
+        color: $font-color1;
+      }
+    }
+
+
+    td {
+      width: 3.4em;
+      height: 3em;
+      border-bottom: 0.1em solid $line_color3;
+      text-align: center;
+      position: relative;
+
+      .holidayCaption{
+        position: absolute;
+        color: $err-color;
+        font-size: 0.3em;
+        left: 50%;
+        top:65%;
+        transform: translateX(-50%);
+      }
+      .todayCaption{
+        position: absolute;
+        color: $line_color1;
+        font-size: 0.3em;
+        left: 50%;
+        top:65%;
+        transform: translateX(-50%);
+      }
+
+    }
+
+    .row0, .row1 {
+      color: $font-color1;
+      font-weight: 600;
+      border-bottom: 0.4em solid $font-color1;
+    }
+
+
+
+
+    .containDate {
+      border-bottom: 0.4em solid $line_color1;
+
+      &:hover {
+        background-color: $highlight-color2;
+      }
+    }
+
+
+
+    .todayHoliday{
+      color : $err-color;
+      font-weight: 600;
+      background-color: $highlight-color;
+      border-bottom: 0.4em solid $err-color;
+    }
+
+    .holiday{
+      color : $err-color;
+      font-weight: 600;
+      border-bottom: 0.4em solid $err-color;
+    }
+
+    .today {
+      background-color: $highlight-color;
+    }
+
+
+  }
+
+  section {
+    margin-bottom: 4em;
+  }
+}
+
+footer {
+  width: 30em;
+  background-color: $main-color;
+  margin: auto;
+  padding: 2em;
+  font-family: $sans-serif;
+  font-weight: 400;
+  border-bottom-left-radius: $main-radius;
+  border-bottom-right-radius: $main-radius;
+  text-align: center;
+  color : #cccccc;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap');

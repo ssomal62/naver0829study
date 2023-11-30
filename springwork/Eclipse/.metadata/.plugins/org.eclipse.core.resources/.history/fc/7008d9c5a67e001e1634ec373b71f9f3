@@ -1,0 +1,21 @@
+package day1109.test6_anno;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class TextMainAnnoEx6 {
+	public static void main(String[] args) {
+		
+		
+		
+		ApplicationContext context = new ClassPathXmlApplicationContext("appcontext2.xml");
+		
+
+		
+		AnnoCar car1 = (AnnoCar)context.getBean("mycar");
+		car1.myCarInfo();
+	}
+
+
+}

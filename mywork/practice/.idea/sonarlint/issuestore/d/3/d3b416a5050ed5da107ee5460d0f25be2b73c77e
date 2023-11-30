@@ -1,0 +1,24 @@
+
+I
+java:S1121".Extract the assignment out of this expression.(Œ›ïÚøÿÿÿÿ
+f	java:S117
+"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÆÏÖ
+7
+java:S1643"Use a StringBuilder instead.(ØÜéüûÿÿÿÿ
+2
+java:S1643"Use a StringBuilder instead.(± ¯
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(´â­‘ÿÿÿÿÿ
+U
+java:S1854":Remove this useless assignment to local variable "answer".(Œ›ïÚøÿÿÿÿ
+A
+java:S1481"+Remove this unused "answer" local variable.(åí¢é
+6
+java:S2129" Remove this "String" constructor(Ãúáø
+;
+java:S2129" Remove this "String" constructor(²ğ¼Ôüÿÿÿÿ
+Q	java:S125"<This block of commented-out lines of code should be removed.(óÔ‹˜
+M
+java:S1135 "2Complete the task associated to this TODO comment.(» æÿÿÿÿÿ
+E	java:S106""+Replace this use of System.out by a logger.(äå¡­úÿÿÿÿ
+H
+java:S1128"-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ

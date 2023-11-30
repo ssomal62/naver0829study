@@ -1,0 +1,11 @@
+
+t
+java:S3008"WRename this field "MYSQL_DRIVER" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(®§¬8»÷¸1
+v
+java:S3008	"TRename this field "MYSQL_URL" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ßèø¨ûÿÿÿÿ8»÷¸1
+X	java:S125"<This block of commented-out lines of code should be removed.(Ï÷öÏ8‘»÷¸1
+F	java:S106"+Replace this use of System.out by a logger.(Š€ë8“»÷¸1
+X	java:S125"<This block of commented-out lines of code should be removed.(ó‘ëµ8ü¶ø¸1
+X
+java:S6437"6Revoke and change this password, as it is compromised.(á·Šëüÿÿÿÿ8”»÷¸1
+L	java:S106"+Replace this use of System.out by a logger.(ï¸ …ûÿÿÿÿ8•»÷¸1

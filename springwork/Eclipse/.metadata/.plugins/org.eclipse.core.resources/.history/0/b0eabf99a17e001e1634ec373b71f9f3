@@ -1,0 +1,12 @@
+package day1109.test6_anno;
+
+public class AnnoCanadaTire implements AnnoTire{
+	
+
+	@Override
+	public String getTireName() {
+		// TODO Auto-generated method stub
+		return "어노테이션 캐나다 타이어";
+	}
+
+}

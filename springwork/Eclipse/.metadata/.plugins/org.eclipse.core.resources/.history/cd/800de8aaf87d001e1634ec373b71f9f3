@@ -1,0 +1,15 @@
+package day1108.test1;
+
+import lombok.Setter;
+
+@Setter
+@Getter
+public class testDto {
+	
+	private String name;
+	private String addr;
+	private int age;
+	
+	
+
+}

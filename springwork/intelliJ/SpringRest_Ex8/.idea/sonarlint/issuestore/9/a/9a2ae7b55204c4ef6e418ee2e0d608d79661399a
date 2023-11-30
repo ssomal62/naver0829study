@@ -1,0 +1,14 @@
+
+g	java:S112;"FDefine and throw a dedicated exception instead of using a generic one.(¯ßĞçøÿÿÿÿ8£¶ğŞ½1
+L	java:S106"+Replace this use of System.out by a logger.(œĞæ¬üÿÿÿÿ8Á¶ğŞ½1
+G	java:S106#"+Replace this use of System.out by a logger.(şáüÃ8Ã¶ğŞ½1
+]	java:S1257"<This block of commented-out lines of code should be removed.(ÂóÎüÿÿÿÿ8Å¶ğŞ½1
+C
+java:S1075B"&Remove this hard-coded path-delimiter.(—”İ¿8Ç¶ğŞ½1
+T
+java:S1135A"2Complete the task associated to this TODO comment.(» æÿÿÿÿÿ8Ç¶ğŞ½1
+L	java:S106C"+Replace this use of System.out by a logger.(å¿¾Òúÿÿÿÿ8Ç¶ğŞ½1
+G	java:S106F"+Replace this use of System.out by a logger.(à§Şş8È¶ğŞ½1
+L	java:S106J"+Replace this use of System.out by a logger.(ğÒã€ùÿÿÿÿ8È¶ğŞ½1
+X
+java:S1128"6Remove this unused import 'lombok.AllArgsConstructor'.(´œ¾öùÿÿÿÿ8È¶ğŞ½1

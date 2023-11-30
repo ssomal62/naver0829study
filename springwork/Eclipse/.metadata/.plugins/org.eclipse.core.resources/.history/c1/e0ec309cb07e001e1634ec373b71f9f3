@@ -1,0 +1,11 @@
+package study.day1109.mvc1;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+
+@Controller
+public class TestController {
+	public String home(Model model) {
+		return "result1";
+	}
+}

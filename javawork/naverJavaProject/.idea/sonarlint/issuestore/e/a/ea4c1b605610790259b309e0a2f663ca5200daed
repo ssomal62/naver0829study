@@ -1,0 +1,53 @@
+
+k	java:S1175"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(÷¯Šÿÿÿÿÿ
+k	java:S117{"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(÷¯Šÿÿÿÿÿ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¦ß¬—
+>
+java:S2189¶""Add an end condition to this loop.(˜ïˆÿÿÿÿÿ
+E	java:S106"+Replace this use of System.out by a logger.(°ìÂ«üÿÿÿÿ
+@	java:S106"+Replace this use of System.out by a logger.(ó°í
+E	java:S106"+Replace this use of System.out by a logger.(»Ê‰ğüÿÿÿÿ
+@	java:S106("+Replace this use of System.out by a logger.(Ô°Š
+E	java:S1063"+Replace this use of System.out by a logger.(í¬øÙúÿÿÿÿ
+;
+java:S34574"%String contains no format specifiers.(µ‘€´
+@	java:S1064"+Replace this use of System.out by a logger.(µ‘€´
+@
+java:S34576"%String contains no format specifiers.(ÍÇıŒıÿÿÿÿ
+E	java:S1066"+Replace this use of System.out by a logger.(ÍÇıŒıÿÿÿÿ
+@
+java:S34578"%String contains no format specifiers.(µµ¡«úÿÿÿÿ
+E	java:S1068"+Replace this use of System.out by a logger.(µµ¡«úÿÿÿÿ
+@
+java:S3457:"%String contains no format specifiers.(œ‡¢ıÿÿÿÿ
+E	java:S106:"+Replace this use of System.out by a logger.(œ‡¢ıÿÿÿÿ
+;
+java:S3457<"%String contains no format specifiers.(úÿú¤
+@	java:S106<"+Replace this use of System.out by a logger.(úÿú¤
+E	java:S106Q"+Replace this use of System.out by a logger.(¼øÇÑÿÿÿÿÿ
+?	java:S106\"+Replace this use of System.out by a logger.(ÕÑ·
+E	java:S106]"+Replace this use of System.out by a logger.(Õà™—ÿÿÿÿÿ
+@	java:S106l"+Replace this use of System.out by a logger.(ªş±¸
+E	java:S106n"+Replace this use of System.out by a logger.(ŠÄ–Ÿùÿÿÿÿ
+@	java:S106y"+Replace this use of System.out by a logger.(Ş¶Şˆ
+@
+java:S3457z"%String contains no format specifiers.(¯Š†¤øÿÿÿÿ
+E	java:S106z"+Replace this use of System.out by a logger.(¯Š†¤øÿÿÿÿ
+@
+java:S3457|"%String contains no format specifiers.(ñÅËğúÿÿÿÿ
+E	java:S106|"+Replace this use of System.out by a logger.(ñÅËğúÿÿÿÿ
+;
+java:S3457~"%String contains no format specifiers.(”ÛË¾
+@	java:S106~"+Replace this use of System.out by a logger.(”ÛË¾
+<
+java:S3457€"%String contains no format specifiers.(Æšç¢
+A	java:S106€"+Replace this use of System.out by a logger.(Æšç¢
+<
+java:S3457‚"%String contains no format specifiers.(­¯Æ
+A	java:S106‚"+Replace this use of System.out by a logger.(­¯Æ
+A	java:S106™"+Replace this use of System.out by a logger.(ÓõóÈ
+F	java:S106›"+Replace this use of System.out by a logger.(Óßãùÿÿÿÿ
+F	java:S106¬"+Replace this use of System.out by a logger.(¶ä÷Õùÿÿÿÿ
+7	java:S131¸""Add a default case to this switch.(€ä¿;
+F	java:S106Ç"+Replace this use of System.out by a logger.(Ÿÿö£üÿÿÿÿ
+F	java:S106Ë"+Replace this use of System.out by a logger.(»Ê‰ğüÿÿÿÿ

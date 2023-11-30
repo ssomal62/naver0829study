@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="board.data.BoardDao">
+
+    <select id="totalCountOfBoard" resultType="int">
+        SELECT COUNT(*) FROM simpleboard
+    </select>
+
+    <insert id = "insertBoard" parameterType="BoardDto">
+        <!--알아서 BoardDto내에서 불러옴-->
+        INSERT INTO simpleboard VALUES (null, #{writer}, #{subject},#{content}, #{photo}, 0, now())
+    </insert>
+
+    <select id="selectAllBoard" resultType="BoardDto">
+        SELECT * FROM simpleboard ORDER BY num DESC
+    </select>
+
+    <update id = "updateReadCount" parameterType="int">
+        UPDATE simpleboard SET readcount = readcount + 1 WHERE num = #{num}
+    </update>
+
+    <select id = "selectOneData" parameterType="int" resultType="BoardDto">
+        SELECT * FROM simpleboard WHERE num = #{num}
+    </select>
+
+    <delete id="deleteBoard" parameterType="int">
+        DELETE FROM simpleboard WHERE num = #{num}
+    </delete>
+
+    <update id="updateBoard" parameterType="BoardDto">
+        UPDATE simpleboard SET writer = #{writer}, subject = #{subject}, content = #{content}
+
+        <if test = "photo != null">
+            , photo = #{photo}
+        </if>
+        WHERE num = #{num}
+    </update>
+</mapper>

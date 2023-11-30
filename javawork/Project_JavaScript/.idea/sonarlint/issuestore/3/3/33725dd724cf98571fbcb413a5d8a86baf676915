@@ -1,0 +1,15 @@
+
+jWeb:DoctypePresenceCheck":Insert a <!DOCTYPE> declaration to before this <html> tag.(œ÷Ãûÿÿÿÿ8…øä»³1
+a	Web:S5254"@Add "lang" and/or "xml:lang" attributes to this "<html>" element(œ÷Ãûÿÿÿÿ8‡øä»³1
+F	Web:S5256#"%Add "<th>" headers to this "<table>".(æŠç¤ûÿÿÿÿ8ÁÕç»³1
+E	Web:S1827&")Remove this deprecated "align" attribute.(¯‹±ƒ8¼³˜¼³1
+E	Web:S1827(")Remove this deprecated "align" attribute.(…âš8¾³˜¼³1
+E	Web:S1827(")Remove this deprecated "width" attribute.(…âš8À³˜¼³1
+J	Web:S18270")Remove this deprecated "align" attribute.(ñ¥±şÿÿÿÿ8À³˜¼³1
+J	Web:S18270")Remove this deprecated "width" attribute.(ñ¥±şÿÿÿÿ8À³˜¼³1
+J	Web:S18277")Remove this deprecated "align" attribute.(ôêÊéùÿÿÿÿ8À³˜¼³1
+J	Web:S18277")Remove this deprecated "width" attribute.(ôêÊéùÿÿÿÿ8À³˜¼³1
+J	Web:S1827>")Remove this deprecated "align" attribute.(¥“¤àşÿÿÿÿ8À³˜¼³1
+J	Web:S1827>")Remove this deprecated "width" attribute.(¥“¤àşÿÿÿÿ8À³˜¼³1
+SWeb:ImgWithoutAltCheckS"%Add an "alt" attribute to this image.(¾¢ëºûÿÿÿÿ8®Æ³1
+J	Web:S1827b")Remove this deprecated "align" attribute.(»¡å¬ıÿÿÿÿ8¿µ‡Ç³1

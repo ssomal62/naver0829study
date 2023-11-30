@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="data.dao.PhotoDao">
+
+    <insert id="insertPhoto" parameterType="PhotoDto">
+        INSERT INTO photodb VALUES (null, #{title}, #{photo}, #{photo80}, #{photo150}, now())
+    </insert>
+
+    <select id="selectAllPhotos" resultType="PhotoDto">
+        SELECT * FROM photodb ORDER BY num DESC
+    </select>
+
+    <delete id="deletePhoto" parameterType="int">
+        DELETE FROM photodb WHERE num = #{num}
+    </delete>
+
+
+
+</mapper>
+

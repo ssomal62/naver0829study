@@ -1,0 +1,15 @@
+
+f	java:S117 "QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğŸ’§
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(í–‡È
+]
+java:S2259-"GA "NullPointerException" could be thrown; "resultSet" is nullable here.(èå²×
+c
+java:S2095"HUse try-with-resources or close this "Connection" in a "finally" clause.(–¹ıÊûÿÿÿÿ
+b
+java:S2095"GUse try-with-resources or close this "Statement" in a "finally" clause.(‡²€·ıÿÿÿÿ
+E	java:S106"+Replace this use of System.out by a logger.(×¹„£ıÿÿÿÿ
+Q
+java:S6437"6Revoke and change this password, as it is compromised.(–¹ıÊûÿÿÿÿ
+E	java:S106%"+Replace this use of System.out by a logger.(İ¥Í‰ùÿÿÿÿ
+@	java:S106*"+Replace this use of System.out by a logger.(²ãé™
+>	java:S1081")Either remove or fill this block of code.(«ğÆ‚

@@ -1,0 +1,27 @@
+package study.day1109.mvc1;
+
+import java.sql.Date;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class TestController {
+	
+	//@RequestMapping("/") // 초기 부전부터 모두 가능한 어노테이션
+	@GetMapping  //스프링버전 5부터 가능한 어노테이션
+	public String home(Model model) {
+		
+		model.addAttribute("message","Have a Good Time!!"); //Request에 저장됨
+		model.addAttribute("today",new java.util.Date());
+		return "result1";
+	}
+	
+	@GetMapping("/shop/list")  //list.*  : list 뒤의 경로로 설정한 것들은 모두 호출 가능
+	public String go(Model model) {
+		model.addAttribute("path","/shop/list");
+		return "list";
+	}
+}

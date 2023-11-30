@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Gasoek+One&family=Gugi&family=Nanum+Gothic+Coding:wght@400;700&family=Noto+Sans+KR:wght@200;400;800;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body * {
+	    font-family: "Noto Sans KR";
+            font-size: 20px;
+        }
+
+        .newForm{
+            width: 100px;
+        }
+
+
+    </style>
+    <script>
+        $(function () {
+
+            list("");
+
+            $("#searchInput").keyup(function (e){
+                let  search = e.target.value;
+                list(search);
+            });
+
+            $(document).on('click','.delStudent',(function (){
+                let id = $(this).attr("stuId");
+                let ask = confirm("삭제하시겠습니까?");
+                if(!ask) return;
+                $.ajax({
+                    type:"get",
+                    dataType:"html",
+                    url:"studentDelete.jsp",
+                    data : {"id":id},
+                    success:function (res){
+                        list("");
+                        $("#searchInput").val("");
+                    },
+                    statusCode:{
+                        404:function (){
+                            alert("json 파일을 찾을 수 없어요");
+                        },
+                        500:function (){
+                            alert("서버오류. 코드를 다시 한 번 보세요.");
+                        }
+                    }
+                }) ;
+            }));
+
+            $(document).on('click','#btn1',function (){
+                submit();
+
+            });
+
+
+        });
+
+        function submit(){
+            let name = $("#myModal #stuName").val();
+            let age = $("#myModal #stuAge").val();
+            let phone = $("#myModal #stuPhone").val();
+            let mbti = $("#myModal #stuMbti").val();
+
+            $.ajax({
+                type:"get",
+                dataType:"html",
+                url:"studentAdd.jsp",
+                data : {"name":name,"age":age,"phone":phone,"mbti":mbti},
+                success:function (res){
+
+                    list("");
+                    $("#myModal #stuName").val("");
+                    $("#myModal #stuAge").val("");
+                    $("#myModal #stuPhone").val("");
+                    $("#myModal #stuMbti").val("");
+
+                }
+            }) ;
+        }
+
+
+        function list(search){
+            $.ajax({
+                type:"get",
+                dataType:"json",
+                url:"StudentList.jsp",
+                data:{"search":search},
+                success:function (res){
+
+                let s = `<table class="table table-bodered" style="width:800px">
+                                    <thead>
+                                        <tr>
+                                        <th>이름</th>
+                                        <th>나이</th>
+                                        <th>전화번호</th>
+                                        <th>MBTI</th>
+                                        <th>등록일</th>
+                                        <th>삭제</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                `;
+
+                    $.each(res,function (idx,item){
+                       s += `
+                              <tr>
+                                <td>${item.name}</td>
+                                <td>${item.age}</td>
+                                <td>${item.phone}</td>
+                                <td>${item.mbti}</td>
+                                <td>${item.date}</td>
+                                <td><i class="bi bi-trash delStudent" style="cursor: pointer;" stuId="${item.id}"></i></td>
+                              </tr>
+                            `;
+                    });
+
+                    s += "</tbody></table>";
+
+                    $(".result").html(s);
+                }
+            }) ;
+        }
+
+    </script>
+</head>
+
+
+<body>
+
+<div style = "margin: 30px; float: left">
+    <div class = "input-group" style="width: 400px">
+        <h5>학생 조회</h5>
+        <input type="text" class="form-control" style="width: 150px; margin-left: 50px"
+               autofocus placeholder="이름 입력" id="searchInput">
+        <h5 style="margin-left: 10px;cursor: pointer" id="addStudent"  data-bs-toggle="modal" data-bs-target="#myModal">➕학생추가</h5>
+    </div>
+    <div style="margin: 20px; font-size: 22px" class="result">
+        여기 출력
+    </div>
+
+</div>
+<div style = "margin: 30px;>
+<div id="addForm"></div>
+</div>
+<!-- The Modal -->
+<div class="modal fade" id="myModal">
+    <div class="modal-dialog modal-lm">
+        <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h4 class="modal-title">학생 등록</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+                <label for="stuName"><div class="newForm">이름</div> <input id="stuName" type="text" width="130px"> </label><br>
+                <label for="stuAge"><div class="newForm">나이</div><input id="stuAge" type="text" width="130px"> </label><br>
+                <label for="stuPhone"><div class="newForm">전화번호</div> <input id="stuPhone" type="text" width="130px"> </label><br>
+                <label for="stuMbti"><div class="newForm">MBTI</div> <input id="stuMbti" type="text" width="130px"> </label><br>
+
+            </div>
+            <!-- Modal footer -->
+            <div class="modal-footer">
+                <button type="submit" class="btn btn-success" id="btn1" data-bs-dismiss="modal">등록하기</button>
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>

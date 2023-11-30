@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PowerOverwhelming</title>
+
+    <script src="calendar.js" defer></script>
+
+
+    <script crossorigin="anonymous" src="https://kit.fontawesome.com/63222858b6.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+
+</head>
+<body>
+
+<div style="position: absolute; margin-left: 450px" >
+<main>
+
+    <header>
+        <div id="header">January</div>
+    </header>
+
+    <nav>
+
+        <div id="prevMonth">
+            <i class="fa-solid fa-caret-right fa-rotate-180"></i>
+        </div>
+        <div id="areaUserSetDate">
+            <figure>
+                <label for="setYear"><input class="dateBox" id="setYear" type="number">년</label>
+                <figcaption id="captionYear"></figcaption>
+            </figure>
+            <figure>
+                <label for="setMonth"><input class="dateBox" id="setMonth" type="number">월</label>
+                <figcaption id="captionMonth"></figcaption>
+            </figure>
+        </div>
+
+        <div id="nextMonth">
+            <i class="fa-solid fa-caret-right"></i>
+        </div>
+    </nav>
+
+    <section>
+        <table>
+            <thead></thead>
+            <tbody></tbody>
+        </table>
+    </section>
+
+
+
+</main>
+
+<footer>
+</footer>
+
+</div>
+
+
+<div style="position: absolute; margin-left: 950px" >
+
+    <main>
+        <div class = "input-group" id="table_title" >
+        <h3>전체 이벤트</h3>
+        <span style="margin-left:220px; font-size: 25px; cursor: pointer;" id="addEvent">➕</span>
+        </div>
+
+        <hr>
+        <section>
+            <table id = "dataTable"></table>
+        </section>
+
+        <!-- The Modal -->
+        <div class="modal" id="eventModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="modal-title">이벤트명</h4>
+                        <button class = "btn text-white" data-bs-dismiss="modal" type="button">❌</button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class = "modal-body">
+
+                        <div id = "eventDetail" style="height: 150px">
+                        </div>
+                        <hr>
+                        <div class = "input-group" style="align-items: center">
+                        <div id = "user_img" style="height: 40px; width: 40px; margin-left:10px ;margin-right: 10px;border: 1px solid lightsteelblue"></div>
+                        <span id = "comment_user_id">현재 유저</span> &nbsp;&nbsp;&nbsp;
+                        <input name = "c_content" id = "c_content" type = "text" style="width:280px">
+                        <button class = "btn btn-success" id = "commentAdd" type = "submit" style="height: 28px"> <b>+</b> </button>
+                        </div>
+                        <hr>
+                        <table id = "commentTable">
+                        </table>
+
+                    </div>
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+
+
+                        <button class="btn btn-danger" data-bs-dismiss = "modal" type = "button">닫기</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+    </main>
+
+<footer>
+
+</footer>
+
+</div>
+</body>
+</html>

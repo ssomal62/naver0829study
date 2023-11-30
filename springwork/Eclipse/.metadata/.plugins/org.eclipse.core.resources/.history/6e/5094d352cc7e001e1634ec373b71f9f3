@@ -1,0 +1,22 @@
+package study.day1109.mvc2;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class ShopController {
+	
+	@GetMapping("/")
+	public String home() {
+		return "home";
+	}
+
+	@GetMapping("/shop/{path}")
+	public String list(@PathVariable("path") String path) {
+		System.out.println(path);
+		return "list1";
+	}
+	
+}

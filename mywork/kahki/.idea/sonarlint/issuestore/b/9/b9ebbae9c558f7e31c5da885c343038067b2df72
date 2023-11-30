@@ -1,0 +1,15 @@
+
+h
+java:S1192-"FDefine a constant instead of duplicating this literal "title" 4 times.(àŠŠÞýÿÿÿÿ8­ß½«º1
+j
+java:S1192."HDefine a constant instead of duplicating this literal "content" 4 times.(ßŒ†Ðùÿÿÿÿ8­ß½«º1
+g
+java:S1192+"KDefine a constant instead of duplicating this literal "e_sta_date" 4 times.(È¨‡\8®ß½«º1
+e
+java:S1192@"IDefine a constant instead of duplicating this literal "event_id" 3 times.(ðœžg8®ß½«º1
+e
+java:S1192*"HDefine a constant instead of duplicating this literal "user_id" 4 times.(Ÿæ¥é8®ß½«º1
+h
+java:S1192,"KDefine a constant instead of duplicating this literal "e_end_date" 4 times.(¥Ø€»8®ß½«º1
+m	java:S1178"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(±˜¼™8®ß½«º1
+m	java:S117{"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ã¦²¿8®ß½«º1

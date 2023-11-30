@@ -1,0 +1,13 @@
+package day1108.test3;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class TextMainEx3 {
+	public static void main(String[] args) {
+		ApplicationContext context = new ClassPathXmlApplicationContext("appcontext1.xml");
+		
+		Person p = (Person) context.getBean("person");
+	
+	}
+}

@@ -1,0 +1,8 @@
+package day1108.test3;
+
+public class MyShop {
+
+	private String sangpum;
+	private int price;
+	private String color;
+}

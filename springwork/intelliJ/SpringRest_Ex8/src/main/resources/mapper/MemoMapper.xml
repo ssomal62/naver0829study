@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="data.dao.MemoDao">
+    <insert id="insertMemo" parameterType="MemoDto">
+        INSERT INTO memodb VALUES (null, #{nickname}, #{photo}, #{memo}, 0 , now())
+    </insert>
+    <select id="selectAllMemos" resultType="MemoDto">
+        SELECT * FROM memodb ORDER BY num DESC
+    </select>
+    <delete id="deleteMemo" parameterType="int">
+        DELETE FROM  memodb WHERE num = #{num}
+    </delete>
+    <update id="updateLikesByNum" parameterType="int">
+        UPDATE memodb set likes = likes + 1 WHERE num = #{num}
+    </update>
+    <select id="countLikes" parameterType="int" resultType="int">
+        SELECT likes FROM memodb WHERE num = #{num}
+    </select>
+</mapper>
+

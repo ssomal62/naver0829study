@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap");
+body {
+  background-color: #118e6b;
+  margin-top: 5em;
+}
+
+main {
+  width: 30em;
+  height: 40em;
+  background-color: #edede9;
+  margin: auto;
+  padding: 2em;
+  font-family: -apple-system, "Noto Sans KR";
+  font-weight: 400;
+  color: #489779;
+  border-top-left-radius: 0.5em;
+  border-top-right-radius: 0.5em;
+}
+main header {
+  font-family: -apple-system, "Noto Sans KR";
+  font-size: 3.5em;
+  font-weight: 900;
+  text-align: center;
+  letter-spacing: 0.2em;
+  margin-bottom: 0.5em;
+}
+main nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3em;
+}
+
+
+main nav .dateBox {
+  width: 4em;
+  height: 2em;
+  font-family: -apple-system, "Noto Sans KR";
+  font-size: 1em;
+  font-weight: 400;
+  background-color: #d9dbda;
+  border: 0;
+  border-radius: 0.2em;
+  margin-right: 0.5em;
+  text-align: center;
+  color: #489779;
+}
+
+main table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  cursor: default;
+  margin: auto;
+}
+
+main table th:nth-child(1), main table th:nth-child(7) {
+  color: #f06e50;
+}
+main table td {
+  width: 10em;
+  height: 5em;
+  border-bottom: 0.1em solid #118e6b;
+  text-align: center;
+  position: relative;
+}
+
+.events {
+  cursor: pointer;
+}
+
+
+
+footer {
+  width: 30em;
+  background-color: #edede9;
+  margin: auto;
+  padding: 2em;
+  font-family: -apple-system, "Noto Sans KR";
+  font-weight: 400;
+  border-bottom-left-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+  text-align: center;
+  color: #cccccc;
+}
+

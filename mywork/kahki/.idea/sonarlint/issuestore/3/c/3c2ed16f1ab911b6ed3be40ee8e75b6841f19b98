@@ -1,0 +1,45 @@
+
+Ajavascript:S125"Remove this commented out code.(î˜¬Ë8üïë¬À1
+ujavascript:S4138°"LExpected a `for-of` loop instead of a `for` loop with this simple iteration.(Øƒ£şÿÿÿÿ8ıïë¬À1
+_javascript:S930â"7This function expects no arguments, but 1 was provided.(ºµ¼Àøÿÿÿÿ8ıïë¬À1
+Xjavascript:S1481Ò"4Remove the declaration of the unused 'row' variable.(Ñ¯©™8ıïë¬À1
+Ujavascript:S1854Ò"1Remove this useless assignment to variable "row".(Ñ¯©™8ıïë¬À1
+?javascript:S3626"Remove this redundant jump.(ûÁİ…8şïë¬À1
+Xjavascript:S1481¼"4Remove the declaration of the unused 'row' variable.(Ñ¯©™8şïë¬À1
+Ujavascript:S1854¼"1Remove this useless assignment to variable "row".(Ñ¯©™8şïë¬À1
+{javascript:S2703û"WAdd the "let", "const" or "var" keyword to this declaration of "i" to make it explicit.(¦Ùğ8şïë¬À1
+javascript:S2703ü"XAdd the "let", "const" or "var" keyword to this declaration of "ch" to make it explicit.(éñ±ıÿÿÿÿ8şïë¬À1
+xjavascript:S3776ƒ"TRefactor this function to reduce its Cognitive Complexity from 31 to the 15 allowed.(ƒ‹­û8şïë¬À1
+Mjavascript:S3504ˆ")Unexpected var, use let or const instead.(Ü†8ÿïë¬À1
+Mjavascript:S3504Ô")Unexpected var, use let or const instead.(†èÎ¡8ÿïë¬À1
+Rjavascript:S3504Õ")Unexpected var, use let or const instead.(”à·Õıÿÿÿÿ8ÿïë¬À1
+]javascript:S1481Õ"4Remove the declaration of the unused 'gan' variable.(”à·Õıÿÿÿÿ8ÿïë¬À1
+Zjavascript:S1854Õ"1Remove this useless assignment to variable "gan".(”à·Õıÿÿÿÿ8ÿïë¬À1
+Mjavascript:S3504Ö")Unexpected var, use let or const instead.(Ê’Î8ÿïë¬À1
+Xjavascript:S1481Ö"4Remove the declaration of the unused 'jee' variable.(Ê’Î8ÿïë¬À1
+Ujavascript:S1854Ö"1Remove this useless assignment to variable "jee".(Ê’Î8ÿïë¬À1
+Rjavascript:S3504×")Unexpected var, use let or const instead.(ˆ¤­Äøÿÿÿÿ8ÿïë¬À1
+]javascript:S1481×"4Remove the declaration of the unused 'ddi' variable.(ˆ¤­Äøÿÿÿÿ8ÿïë¬À1
+Zjavascript:S1854×"1Remove this useless assignment to variable "ddi".(ˆ¤­Äøÿÿÿÿ8ÿïë¬À1
+Rjavascript:S3504Ø")Unexpected var, use let or const instead.(šıæûÿÿÿÿ8ÿïë¬À1
+^javascript:S1481Ø"5Remove the declaration of the unused 'week' variable.(šıæûÿÿÿÿ8ÿïë¬À1
+[javascript:S1854Ø"2Remove this useless assignment to variable "week".(šıæûÿÿÿÿ8ÿïë¬À1
+Rjavascript:S3504Ú")Unexpected var, use let or const instead.(ñ®›öùÿÿÿÿ8ÿïë¬À1
+Rjavascript:S3504Ü")Unexpected var, use let or const instead.(…æ„Âùÿÿÿÿ8ÿïë¬À1
+Mjavascript:S3504İ")Unexpected var, use let or const instead.(è˜ıÚ8ÿïë¬À1
+Mjavascript:S3504Ş")Unexpected var, use let or const instead.(ã¥ôŒ8ÿïë¬À1
+Rjavascript:S3504à")Unexpected var, use let or const instead.(‚İµŸüÿÿÿÿ8ÿïë¬À1
+Rjavascript:S3504á")Unexpected var, use let or const instead.(ºùÇÿÿÿÿÿ8ÿïë¬À1
+Rjavascript:S3504â")Unexpected var, use let or const instead.(’¡‰–ÿÿÿÿÿ8ÿïë¬À1
+Ljavascript:S3504ã")Unexpected var, use let or const instead.(•’½i8ÿïë¬À1
+Xjavascript:S1481ã"5Remove the declaration of the unused 'leap' variable.(•’½i8ÿïë¬À1
+Mjavascript:S3504ä")Unexpected var, use let or const instead.(’øÊã8ÿïë¬À1
+Gjavascript:S125ì"Remove this commented out code.(–»Ôšşÿÿÿÿ8ÿïë¬À1
+Gjavascript:S125ë"Remove this commented out code.(àÍ˜Çøÿÿÿÿ8ÿïë¬À1
+Xjavascript:S1854ì"/Remove this useless assignment to variable "w".(®‰¯Àıÿÿÿÿ8ÿïë¬À1
+Bjavascript:S125í"Remove this commented out code.(ıÅ“¶8€ğë¬À1
+Tjavascript:S1854ï"0Remove this useless assignment to variable "k1".(Ä£€ş8€ğë¬À1
+Tjavascript:S1854ğ"0Remove this useless assignment to variable "k2".(ó“Äã8€ğë¬À1
+Gjavascript:S125ñ"Remove this commented out code.(³ ıÕıÿÿÿÿ8€ğë¬À1
+Bjavascript:S125û"Remove this commented out code.(èÚ¿õ8€ğë¬À1
+Bjavascript:S125€"Remove this commented out code.(¾ˆŒË8€ğë¬À1

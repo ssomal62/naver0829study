@@ -1,0 +1,5 @@
+package study.spring.day1114;
+
+public class PhotoUploadController {
+
+}

@@ -1,0 +1,8 @@
+package day1109.test6_anno;
+
+public interface AnnoTire {
+	
+	public String getTireName();
+
+
+}

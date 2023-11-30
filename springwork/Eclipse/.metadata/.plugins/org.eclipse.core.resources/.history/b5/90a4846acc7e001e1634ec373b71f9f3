@@ -1,0 +1,32 @@
+package study.day1109.mvc2;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class ShopController {
+	
+	@GetMapping("/")
+	public String home() {
+		return "home";
+	}
+
+	@GetMapping("/shop/{path}")
+	public String list(@PathVariable("path") String path) {
+		System.out.println(path);
+		
+		String shopinfo="";
+		if(path.equals("list1")) {
+			shopinfo = "원피스 상품 목록";
+		} else if(path.equals("list2")) {
+			shopinfo = "슈즈 상품 목록";
+		} else {
+			shopinfo = "액세서리 상품 목록";
+		}
+		
+		return "list1";
+	}
+	
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Gasoek+One&family=Gugi&family=Nanum+Gothic+Coding:wght@400;700&family=Noto+Sans+KR:wght@200;400;800;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+    .active{
+        border: 3px solid palevioletred;
+        border-radius: 100px;
+    }
+</style>
+    <script>
+        $(function () {
+            $("#btn1").click(function (){
+               let tag = `<button type="button" class = "btn btn-danger" id="btn2">버튼2</button>`;
+               $("#btn1").after(tag);
+            });
+            // 나중에 추가된 버튼은 click 이벤트 안됨.
+            // $("#btn2").click(function (){
+            //     let tag = `<button type="button" class = "btn btn-danger" id="btn3">버튼3</button>`;
+            //     $("#btn2").after(tag);
+            // });
+
+            //on 이벤트로 설정
+
+            $(document).on("click","#btn1",function (){
+                let tag = `<button type="button" class = "btn btn-danger" id="btn2">버튼2</button>`;
+                $("#btn2").remove();
+                $("#btn1").after(tag);
+            });
+
+            //on은 현재요소든 미래요소든 가능하다.
+            $(document).on("click","#btn2",function (){
+                let tag = `<button type="button" class = "btn btn-danger" id="btn3">버튼3</button>`;
+                $("#btn3").remove();
+                $("#btn2").after(tag);
+            });
+
+            $(document).on("click","#btn3",function (){
+               let r = parseInt(Math.random()*12)+1;
+               let imageName = "../jquery_image/" +(r < 10 ? "0" + r+ ".png": r +".png");
+               $("body").append(`<img src = "${imageName}" class="doll">`);
+            });
+        });
+
+            $(document).on("mouseover",".doll",function (){
+                $(this).siblings().removeClass("active");
+                $(this).addClass("active");
+            });
+
+
+
+    </script>
+</head>
+
+
+<body>
+<h5>미래에 생길 요소들은 live(~1.7)이나 on(~1.8)을 이용해서 이벤트 구현을 해야한다.</h5>
+<button type = "button" class = "btn btn-outline-info" id = "btn1">버튼1</button>
+</body>
+</html>
