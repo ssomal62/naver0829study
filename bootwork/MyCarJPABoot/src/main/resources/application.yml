@@ -1,0 +1,21 @@
+server:
+  port: 9002
+
+#Mysql/JPA Setting
+spring:
+  dataSource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://db-jbnp5-kr.vpc-pub-cdb.ntruss.com:3306/studydb?serverTimezone=Asia/Seoul
+    username: study
+    password: bitcamp123!@#
+
+  jpa:
+    hibernate:
+      ddl-auto: update #update: ??? ??? ??, create: ?? ???? ?? ? ??.
+    generate-ddl: true #ddl ??? DB ??? ??? ??? ???
+    show-sql: true #api ??? ???? sql?? ??? ????? ??
+    database-platform: org.hibernate.dialect.MySQLDialect
+
+
+
+
