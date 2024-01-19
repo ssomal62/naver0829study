@@ -5,18 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="50f53a4e-713a-4eee-b402-07c3d79534c4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../.idea/sonarlint/issuestore/8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../.idea/sonarlint/securityhotspotstore/8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/f/cf99863815a14e7d3594f5ca380b0566f61befa7" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../bootwork/Board/src/main/java/com/cherry/board/practice/controller/BoardController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../bootwork/Board/src/main/java/com/cherry/board/practice/dto/BoardCreateRequestDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../bootwork/Board/src/main/java/com/cherry/board/practice/dto/BoardResponseDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../bootwork/Board/src/main/java/com/cherry/board/practice/enums/BoardStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../bootwork/Board/src/main/java/com/cherry/board/practice/repository/BoardRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../bootwork/Board/src/main/java/com/cherry/board/practice/service/BoardService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bootwork/MyCarJPABoot/src/main/java/com/example/mycarjpaboot/MyCarJpaBootApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../bootwork/MyCarJPABoot/src/main/java/com/example/mycarjpaboot/MyCarJpaBootApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bootwork/MyCarJPABoot/src/main/java/mycar/controller/MyCarCommentController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bootwork/MyCarJPABoot/src/main/java/mycar/controller/MyCarController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bootwork/MyCarJPABoot/src/main/java/mycar/data/MyCarCommentDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bootwork/MyCarJPABoot/src/main/java/mycar/data/MyCarDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bootwork/MyCarJPABoot/src/main/java/mycar/repository/MyCarCommentDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bootwork/MyCarJPABoot/src/main/java/mycar/repository/MyCarCommentDaoInter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bootwork/MyCarJPABoot/src/main/java/mycar/repository/MyCarDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bootwork/MyCarJPABoot/src/main/java/mycar/repository/MyCarDaoInter.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/c/f/cf99863815a14e7d3594f5ca380b0566f61befa7" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../springwork/intelliJ/SpringMyBatis_Ex9/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../springwork/intelliJ/SpringMyBatis_Ex9/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../reactwork/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../reactwork/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../reactwork/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../../reactwork/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../reactwork/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../../reactwork/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,23 +48,24 @@
     <option name="showLibraryContents" value="true" />
     <option name="showScratchesAndConsoles" value="false" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/wxy89/Documents/ssomal62.github.io",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/bitcamp/naver0829/workstudy/mywork/meeting&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\bitcamp\naver0829\workstudy\mywork\meeting" />
       <recent name="C:\java\workspace\meeting" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -95,6 +105,12 @@
       <workItem from="1703588516375" duration="3579000" />
       <workItem from="1703637995839" duration="20000" />
       <workItem from="1704690781707" duration="5981000" />
+      <workItem from="1705394053003" duration="3786000" />
+      <workItem from="1705401543112" duration="847000" />
+      <workItem from="1705480501735" duration="5919000" />
+      <workItem from="1705540258590" duration="4195000" />
+      <workItem from="1705555779761" duration="35000" />
+      <workItem from="1705557897694" duration="2352000" />
     </task>
     <servers />
   </component>
